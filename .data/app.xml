@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.07.00" ExportDate="2017-11-08T22:54:11.4099213+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.07.00" ExportDate="2017-11-08T23:09:02.3635793+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-US" />
     <Dimensions />
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
-      <Attributes />
-    </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
-      <Attributes />
-    </AttributeSet>
-    <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="ToSic.Eav.DataSources.SqlDataSource" Description="Config type for the Sql DataSource" Scope="System" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="|Config ToSic.Eav.DataSources.SqlDataSource" Description="Config type for the Sql DataSource" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="956328b0-7686-4f9d-b84e-4cfce2a21558" KeyNumber="10294">
@@ -160,15 +154,174 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="|Config ToSic.Eav.DataSources.SqlDataSource" Description="Config type for the Sql DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="956328b0-7686-4f9d-b84e-4cfce2a21558" KeyNumber="10294">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Sql Query" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;just a nice name so you remember what it's for&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="dc220921-410e-44ff-98d8-5fddf4e252f8" KeyNumber="10294">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ConnectionGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bda43aac-7f3e-4c4d-b244-c78a17ad8ee1" KeyNumber="10295">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Connection Information" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;How to connect to the DB&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="fbf51a2d-0744-439d-9a0d-997febfc5c26" KeyNumber="10295">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ConnectionStringName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8d5dcc6-5a4e-41d7-84f4-491a71ab3914" KeyNumber="10296">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="SiteSqlServer" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Connection Name (preferred)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Use connection names from the web.config - DNN default is &lt;em&gt;SiteSqlServer&lt;/em&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c5e4826f-c5d2-4ac9-86df-cb165ebd7478" KeyNumber="10296">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ConnectionString" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a0434f14-b0b9-4a41-9ac1-3ec63dd8b708" KeyNumber="10297">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Connection String (alternative)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;alternative: write the connection string instead of the connection name&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="45c99f5d-6bdb-40d8-9d8b-f69338a2477a" KeyNumber="10297">
+            <Value Key="RowCount" Value="3" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="QueryGroup" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b102202f-097a-47e1-ba11-947ca40ffadd" KeyNumber="10298">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Query" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;What do you want to query, and how to treat the result&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="3ce28b0b-7d4b-4958-bc68-537302609968" KeyNumber="10298">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="SelectCommand" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4c39ad49-3845-4c5c-b335-399c414b9357" KeyNumber="10299">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="SELECT TOP (1000) PortalId as EntityId, HomeDirectory as EntityTitle&#xD;&#xA;      ,[PortalID]&#xD;&#xA;      ,[ExpiryDate]&#xD;&#xA;      ,[AdministratorRoleId]&#xD;&#xA;      ,[GUID]&#xD;&#xA;      ,[DefaultLanguage]&#xD;&#xA;      ,[HomeDirectory]&#xD;&#xA;      ,[CreatedOnDate]&#xD;&#xA;      ,[PortalGroupID]&#xD;&#xA;  FROM [Portals]&#xD;&#xA;  Where ExpiryDate is null" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="SQL" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;SQL select statement&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="04180b43-3f81-4cb8-971d-39a8cf37c019" KeyNumber="10299">
+            <Value Key="RowCount" Value="10" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ContentType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="11897030-b94a-4322-bd62-c089391d0bde" KeyNumber="10300">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="SqlData" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Content Type Name" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Name of the content-type in result&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c665c68e-bf51-4c0d-8748-5d0e01bf733b" KeyNumber="10300">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="EntityIdField" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="260d9cf5-58e1-4d3b-8379-258f1af0cfa6" KeyNumber="10301">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Id Field" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;name of the ID field, if blank, defaults to &lt;em&gt;EntityId&lt;/em&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="e6e8742f-6a19-411f-b3cd-08845ce77ea6" KeyNumber="10301">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="EntityTitleField" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5820ec5c-cc1d-4043-b701-95513355e949" KeyNumber="10302">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title Field" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;name of the title field, if blank, defaults to &lt;em&gt;EntityTitle&lt;/em&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="58e806ad-3bff-4350-ae14-704c19685b42" KeyNumber="10302">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
   </AttributeSets>
   <Entities>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="52ddac82-9c2c-4bf2-b031-73da89c0c460" KeyNumber="771">
       <Value Key="AllowRazorTemplates" Value="False" Type="Boolean" />
       <Value Key="AllowTokenTemplates" Value="False" Type="Boolean" />
+      <Value Key="Description" Value="Dev-App to plan and create system content types for data-sources" Type="String" />
       <Value Key="DisplayName" Value="DataSource-Types" Type="String" />
       <Value Key="Folder" Value="DataSource-Types" Type="String" />
+      <Value Key="Hidden" Value="False" Type="Boolean" />
       <Value Key="OriginalId" Value="" Type="String" />
-      <Value Key="Version" Value="00.00.01" Type="String" />
+      <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
+      <Value Key="RequiredVersion" Value="09.07" Type="String" />
+      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
+      <Value Key="Version" Value="00.00.02" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="d43ab5d8-0cec-4c62-87ef-b987e6bfdd26" KeyNumber="771" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="f6c7422e-7f63-4bdf-843b-efd585dce3f3" KeyNumber="771" />
