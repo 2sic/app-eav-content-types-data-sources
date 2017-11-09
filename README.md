@@ -3,8 +3,12 @@
 Dev app for building and maintaining content-types relevant to configuring EAV data sources (for 2sic developers)
 
 ## Existing Content Types:
-1. None
+1. SqlDataSource
 
 
 ## Work In Progress
-1. SqlDataSource
+* none
+
+
+## Next probably
+1. 
