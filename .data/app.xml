@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.07.00" ExportDate="2017-11-09T17:52:23.3127482+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.08.00" ExportDate="2017-11-13T20:18:51.9222182+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-US" />
     <Dimensions />
   </Header>
   <AttributeSets>
+    <AttributeSet StaticName="38e7822b-1049-4539-bb3f-f99949b1b1d1" Name="|Config ToSic.Eav.DataSources.Shuffle" Description="Config type for Shuffle" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Take" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f93f5287-9a90-49fb-b13a-cbd3acad2fea" KeyNumber="10356">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Take" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="38e7822b-1049-4539-bb3f-f99949b1b1d1" Name="|Config ToSic.Eav.DataSources.Shuffle" Description="Config type for Shuffle" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Take" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f93f5287-9a90-49fb-b13a-cbd3acad2fea" KeyNumber="10356">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Take" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="|Config ToSic.Eav.DataSources.SqlDataSource" Description="Config type for the Sql DataSource" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -351,9 +373,9 @@
       <Value Key="Hidden" Value="False" Type="Boolean" />
       <Value Key="OriginalId" Value="" Type="String" />
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
-      <Value Key="RequiredVersion" Value="09.07" Type="String" />
+      <Value Key="RequiredVersion" Value="09.08" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.02" Type="String" />
+      <Value Key="Version" Value="00.00.03" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="d43ab5d8-0cec-4c62-87ef-b987e6bfdd26" KeyNumber="771" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="f6c7422e-7f63-4bdf-843b-efd585dce3f3" KeyNumber="771" />
@@ -394,6 +416,14 @@
       <Value Key="Type" Value="C# Razor" Type="String" />
       <Value Key="UseForList" Value="False" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="export/.*" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="46b356e4-6a13-4f25-8620-f8652221d2af" KeyString="38e7822b-1049-4539-bb3f-f99949b1b1d1">
+      <Value Key="Description" Value="Configure a shuffling data-source" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Use this to configure how shuffling should work. Basically just specify how many items should be returned in the end. Learn more about this in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2sxc wiki&lt;/a&gt; on the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-Shuffle&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Shuffle DataSource&lt;/a&gt; page.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Shuffle DataSource" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />

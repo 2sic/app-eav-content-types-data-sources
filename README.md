@@ -4,10 +4,11 @@ Dev app for building and maintaining content-types relevant to configuring EAV d
 
 ## Existing Content Types:
 1. SqlDataSource
+1. Shuffle DataSource
 
 
 ## Work In Progress
-* none
+* RelationshipFilter
 
 
 ## Next probably
