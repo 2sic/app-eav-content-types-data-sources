@@ -13,3 +13,10 @@ Dev app for building and maintaining content-types relevant to configuring EAV d
 
 ## Next probably
 1. 
+
+
+
+## Warning
+This app is very difficult to install, because it must circumvent certain automations on the EAV. So you can't just install in on any EAV / 2sxc. 
+
+I'll write some instructions some day, but ATM just be aware of the fact that it's not easy, but that's by design. 
