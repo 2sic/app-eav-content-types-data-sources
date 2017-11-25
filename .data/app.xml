@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.08.01" ExportDate="2017-11-20T23:37:30.1667274+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.09.00" ExportDate="2017-11-25T11:12:03.0729549+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-US" />
@@ -357,15 +357,16 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Operation / Comparison" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This determines how we will compare. The following operations exist in 2sxc 9.9+:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;the (blank) default is the same as&amp;nbsp;&lt;strong&gt;contains&lt;/strong&gt;&amp;nbsp;- we will check if the related items contains such an item, so if in a list of tags, one has &lt;em&gt;all&lt;/em&gt; the mentioned tag(s)&lt;/li&gt;&#xA;&lt;li&gt;with a &lt;strong&gt;not-contains&lt;/strong&gt; the related items may not contain &lt;em&gt;all&lt;/em&gt; of the tags&amp;nbsp;&lt;/li&gt;&#xA;&lt;li&gt;if you use &lt;strong&gt;containsany&lt;/strong&gt;, it will return all items where the related-items has &lt;em&gt;any one&lt;/em&gt; of the filter criterias&lt;/li&gt;&#xA;&lt;li&gt;with a &lt;strong&gt;not-containsany&lt;/strong&gt;, it will return those which don't have any of the items you listed in filter&lt;/li&gt;&#xA;&lt;li&gt;in case of a&amp;nbsp;&lt;strong&gt;first&lt;/strong&gt; the first item in the relationships must be what we want - this is typical for lists where the first item is like the primary category. If you specify multiple items in filter, the first will be valid if it matches any of those.&lt;/li&gt;&#xA;&lt;li&gt;in case of a &lt;strong&gt;not-first&lt;/strong&gt; the first item may not match this&lt;/li&gt;&#xA;&lt;li&gt;use &lt;strong&gt;any&amp;nbsp;&lt;/strong&gt;it will ignore the filter-value and simply keep all items having any relationships&amp;nbsp;&lt;/li&gt;&#xA;&lt;li&gt;with &lt;strong&gt;not-any&lt;/strong&gt; it will return all items not having any relationships&lt;/li&gt;&#xA;&lt;li&gt;with&amp;nbsp;&lt;strong&gt;count&lt;/strong&gt; it will keep all items having exactly the desired amount of related-items, the amount is specified in the &lt;em&gt;filter&lt;/em&gt;-field&lt;/li&gt;&#xA;&lt;li&gt;if &lt;strong&gt;not-count&lt;/strong&gt; it will keep all items having a different amount than the desired amount&lt;/li&gt;&#xA;&lt;/ol&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0cd87907-a57a-4a8c-a357-72addb777a29" KeyNumber="10841">
-            <Value Key="RowCount" Value="1" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="03f819e8-8e60-439a-81cb-fa19e2ec79e8" KeyNumber="10841">
+            <Value Key="DropdownValues" Value="(default = contains):&#xA;contains - keep these that have all of these:contains&#xA;not-contains - keep these that don't have all:not-contains&#xA;containsany - keep these that have any of these:containsany&#xA;not-containsany - keep these that have none of these:not-containsany&#xA;first - keep these where the first item is one of these:first&#xA;not-first - keep these where the first item is none of these:not-first&#xA;any - keep these that have relationships:any&#xA;not-any - keep these that have no relationships:not-any&#xA;count - keep these with the exact child-amount in filter:count&#xA;not-count - keep these with a different child amount than in filter:not-count" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Separator" Type="String" IsTitle="false">
@@ -373,15 +374,16 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Separator Character" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;if you want to check for multiple relationships (like having multiple tags), then the filter-value will contain a string with multiple values. By default the separator is blank - so the filter-value will not be separated. Usually you would use a comma, so that you can write &quot;online,2017,seo&quot;, but there are cases where your strings may themselves contain commas - so this is why you can specify your own separation character.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="469a158d-66e4-4553-b8fa-4b93227dbcc1" KeyNumber="10842">
-            <Value Key="RowCount" Value="1" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="901e562b-fdd6-4f68-afdc-5e7fbbdaa6e1" KeyNumber="10842">
+            <Value Key="DropdownValues" Value="(none):&#xA;comma ,:,&#xA;bar / pipe |:|" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -504,15 +506,16 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Operation / Comparison" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This determines how we will compare. The following operations exist in 2sxc 9.9+:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;the (blank) default is the same as&amp;nbsp;&lt;strong&gt;contains&lt;/strong&gt;&amp;nbsp;- we will check if the related items contains such an item, so if in a list of tags, one has &lt;em&gt;all&lt;/em&gt; the mentioned tag(s)&lt;/li&gt;&#xA;&lt;li&gt;with a &lt;strong&gt;not-contains&lt;/strong&gt; the related items may not contain &lt;em&gt;all&lt;/em&gt; of the tags&amp;nbsp;&lt;/li&gt;&#xA;&lt;li&gt;if you use &lt;strong&gt;containsany&lt;/strong&gt;, it will return all items where the related-items has &lt;em&gt;any one&lt;/em&gt; of the filter criterias&lt;/li&gt;&#xA;&lt;li&gt;with a &lt;strong&gt;not-containsany&lt;/strong&gt;, it will return those which don't have any of the items you listed in filter&lt;/li&gt;&#xA;&lt;li&gt;in case of a&amp;nbsp;&lt;strong&gt;first&lt;/strong&gt; the first item in the relationships must be what we want - this is typical for lists where the first item is like the primary category. If you specify multiple items in filter, the first will be valid if it matches any of those.&lt;/li&gt;&#xA;&lt;li&gt;in case of a &lt;strong&gt;not-first&lt;/strong&gt; the first item may not match this&lt;/li&gt;&#xA;&lt;li&gt;use &lt;strong&gt;any&amp;nbsp;&lt;/strong&gt;it will ignore the filter-value and simply keep all items having any relationships&amp;nbsp;&lt;/li&gt;&#xA;&lt;li&gt;with &lt;strong&gt;not-any&lt;/strong&gt; it will return all items not having any relationships&lt;/li&gt;&#xA;&lt;li&gt;with&amp;nbsp;&lt;strong&gt;count&lt;/strong&gt; it will keep all items having exactly the desired amount of related-items, the amount is specified in the &lt;em&gt;filter&lt;/em&gt;-field&lt;/li&gt;&#xA;&lt;li&gt;if &lt;strong&gt;not-count&lt;/strong&gt; it will keep all items having a different amount than the desired amount&lt;/li&gt;&#xA;&lt;/ol&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0cd87907-a57a-4a8c-a357-72addb777a29" KeyNumber="10841">
-            <Value Key="RowCount" Value="1" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="03f819e8-8e60-439a-81cb-fa19e2ec79e8" KeyNumber="10841">
+            <Value Key="DropdownValues" Value="(default = contains):&#xA;contains - keep these that have all of these:contains&#xA;not-contains - keep these that don't have all:not-contains&#xA;containsany - keep these that have any of these:containsany&#xA;not-containsany - keep these that have none of these:not-containsany&#xA;first - keep these where the first item is one of these:first&#xA;not-first - keep these where the first item is none of these:not-first&#xA;any - keep these that have relationships:any&#xA;not-any - keep these that have no relationships:not-any&#xA;count - keep these with the exact child-amount in filter:count&#xA;not-count - keep these with a different child amount than in filter:not-count" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Separator" Type="String" IsTitle="false">
@@ -520,15 +523,16 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Separator Character" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;if you want to check for multiple relationships (like having multiple tags), then the filter-value will contain a string with multiple values. By default the separator is blank - so the filter-value will not be separated. Usually you would use a comma, so that you can write &quot;online,2017,seo&quot;, but there are cases where your strings may themselves contain commas - so this is why you can specify your own separation character.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="469a158d-66e4-4553-b8fa-4b93227dbcc1" KeyNumber="10842">
-            <Value Key="RowCount" Value="1" Type="Number" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="901e562b-fdd6-4f68-afdc-5e7fbbdaa6e1" KeyNumber="10842">
+            <Value Key="DropdownValues" Value="(none):&#xA;comma ,:,&#xA;bar / pipe |:|" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -1031,6 +1035,110 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02" Name="|Config ToSic.SexyContent.DataSources.ModuleDataSource" Description="For DNN Module DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="97948f14-12db-4d93-8c97-91746eeea501" KeyNumber="10990">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;just a title for your own use - not important&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="a8c092fb-45f3-4df5-aecd-b7cc73805b75" KeyNumber="10990">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="da05a42f-079e-4bfc-ad99-311156702318" KeyNumber="10991">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;general notes so you know what this is for - like &quot;this is the module where the editor configures xyz-settings&quot;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="90a282e3-be70-4f91-be7c-b15f555d15d8" KeyNumber="10991">
+            <Value Key="RowCount" Value="3" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="InstanceId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f02ca527-c77b-42c2-8c41-01a812d7394d" KeyNumber="10992">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="[Module:ModuleId]" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="InstanceId / ModuleId" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:ModuleId]&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="211222c2-2d30-45a8-910e-e11915f0083d" KeyNumber="10992">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02" Name="|Config ToSic.SexyContent.DataSources.ModuleDataSource" Description="For DNN Module DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="97948f14-12db-4d93-8c97-91746eeea501" KeyNumber="10990">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;just a title for your own use - not important&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="a8c092fb-45f3-4df5-aecd-b7cc73805b75" KeyNumber="10990">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="da05a42f-079e-4bfc-ad99-311156702318" KeyNumber="10991">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;general notes so you know what this is for - like &quot;this is the module where the editor configures xyz-settings&quot;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="90a282e3-be70-4f91-be7c-b15f555d15d8" KeyNumber="10991">
+            <Value Key="RowCount" Value="3" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="InstanceId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f02ca527-c77b-42c2-8c41-01a812d7394d" KeyNumber="10992">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="[Module:ModuleId]" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="InstanceId / ModuleId" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:ModuleId]&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="211222c2-2d30-45a8-910e-e11915f0083d" KeyNumber="10992">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Name="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -1172,9 +1280,9 @@
       <Value Key="Hidden" Value="False" Type="Boolean" />
       <Value Key="OriginalId" Value="" Type="String" />
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
-      <Value Key="RequiredVersion" Value="09.08" Type="String" />
+      <Value Key="RequiredVersion" Value="09.10.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.05" Type="String" />
+      <Value Key="Version" Value="09.10.01" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="d43ab5d8-0cec-4c62-87ef-b987e6bfdd26" KeyNumber="771" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="f6c7422e-7f63-4bdf-843b-efd585dce3f3" KeyNumber="771" />
@@ -1229,6 +1337,14 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;This will filter the items and only return those with the relationship-requirements as configured. You can find more instructions in the 2sxc wiki about the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-RelationshipFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Relationship Filter&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="|Config ToSic.Eav.DataSources.RelationshipFilter" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="731fdd95-4e2a-4317-bf90-dd48d7e7d1f6" KeyString="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02">
+      <Value Key="Description" Value="For DNN Module DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;This will return the items of a Module Instance, in two streams &lt;em&gt;Content&lt;/em&gt; and &lt;em&gt;ListContent&lt;/em&gt;.&amp;nbsp;By default, it takes the module-id from the current context, but you can specify a specific module if you need it.&amp;nbsp;Read more in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2sxc wiki&lt;/a&gt; about the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-ModuleDataSource&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Module-Instance DataSource&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.SexyContent.DataSources.ModuleDataSource" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>

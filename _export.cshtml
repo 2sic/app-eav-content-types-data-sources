@@ -1,8 +1,11 @@
 @using ToSic.Eav.Data
 @using ToSic.Eav.Interfaces
 @using ToSic.Eav.Persistence.File
-@using ToSic.Eav.Enums
+@using ToSic.Eav.Repositories
 @using ToSic.Eav.Logging.Simple
+<h1>
+    don't use any more - use the hidden feature in the admin GUI to export content-types. 
+</h1>
 @{
     var target = App.PhysicalPath + "\\export\\";
 
@@ -24,7 +27,7 @@
     IContentType selected = null;
     string message = "";
     // save step - again using very internal API
-    var fileSysLoader = new FileSystemLoader(target, Repositories.TestFiles, true, log);
+    var fileSysLoader = new FileSystemLoader(target, RepositoryTypes.Folder, true, log);
     if(!String.IsNullOrEmpty(Request.QueryString["Scope"])) {
         selected = expCts.FirstOrDefault(ct => 
             ct.Scope == Request.QueryString["Scope"] 
