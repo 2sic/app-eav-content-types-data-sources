@@ -6,6 +6,10 @@ Dev app for building and maintaining content-types relevant to configuring EAV d
 1. SqlDataSource for 2sxc 9.8
 1. Shuffle DataSource for 2sxc 9.8
 1. RelationshipFilter for 2sxc 9.9
+1. Apps for 2sxc 9.12
+1. Attributes for 2sxc 9.12
+1. Zones for 2sxc 9.12
+1. QueryInfo for 2sxc 9.12
 
 ## Work In Progress
 (none)
