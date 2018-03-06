@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.11.01" ExportDate="2017-12-06T23:15:24.2718444+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.15.00" ExportDate="2018-03-06T18:02:08.1734987+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-US" />
@@ -8,12 +8,48 @@
   <AttributeSets>
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="|Config ToSic.Eav.DataSources.App" Description="used to configure an App DataSource" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
+        <Attribute StaticName="ZoneSwitch" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ea43243-d90d-43c2-98da-5dd26d7a32a5" KeyNumber="10813">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Name" Value="Zone Switch" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If you need&amp;nbsp;to access an app from another zone then set the zone number here. Note that the zone-number is not identical to the portal-id. For more help, &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.App&quot; target=&quot;_blank&quot;&gt;read&amp;nbsp;the instructions&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="7eb084bc-32da-4f59-97de-8b4602442c69" KeyNumber="10813">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0d595197-1a7b-4ad8-b37a-c5963e1c8c5f" KeyNumber="10813">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="01efbdf4-d530-4ee6-a7b5-aead2bd98f19" KeyNumber="10813">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="TennantName" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.Zones" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="" Type="String" />
+            <Value Key="Value" Value="Id" Type="String" />
+          </Entity>
+        </Attribute>
         <Attribute StaticName="AppSwitch" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4a0853f9-35e7-475d-be14-48de7d4c4e20" KeyNumber="10812">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="Name" Value="App Switch" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Leave blank by default (to get data from current app). If you give this an&amp;nbsp;App number then the data provided by this source will come from that app. &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.App&quot; target=&quot;_blank&quot;&gt;Learn more in help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -33,13 +69,27 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="75bd688c-08e5-405e-8dc6-d62d3ef8bd92" KeyNumber="10812">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="f92bfa04-f390-45fc-a1e2-210c168490ea" KeyNumber="10812">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.Apps" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="ZoneId=[ZoneSwitch]" Type="String" />
+            <Value Key="Value" Value="Id" Type="String" />
+          </Entity>
         </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="|Config ToSic.Eav.DataSources.App" Description="used to configure an App DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
         <Attribute StaticName="ZoneSwitch" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ea43243-d90d-43c2-98da-5dd26d7a32a5" KeyNumber="10813">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
             <Value Key="Name" Value="Zone Switch" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;If you need&amp;nbsp;to access an app from another zone then set the zone number here. Note that the zone-number is not identical to the portal-id. For more help, &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.App&quot; target=&quot;_blank&quot;&gt;read&amp;nbsp;the instructions&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -58,6 +108,52 @@
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0d595197-1a7b-4ad8-b37a-c5963e1c8c5f" KeyNumber="10813">
             <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="01efbdf4-d530-4ee6-a7b5-aead2bd98f19" KeyNumber="10813">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="TennantName" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.Zones" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="" Type="String" />
+            <Value Key="Value" Value="Id" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AppSwitch" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4a0853f9-35e7-475d-be14-48de7d4c4e20" KeyNumber="10812">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Name" Value="App Switch" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Leave blank by default (to get data from current app). If you give this an&amp;nbsp;App number then the data provided by this source will come from that app. &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.App&quot; target=&quot;_blank&quot;&gt;Learn more in help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="b14afec3-3f23-4374-b87a-80183286b45f" KeyNumber="10812">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="75bd688c-08e5-405e-8dc6-d62d3ef8bd92" KeyNumber="10812">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="f92bfa04-f390-45fc-a1e2-210c168490ea" KeyNumber="10812">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.Apps" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="ZoneId=[ZoneSwitch]" Type="String" />
+            <Value Key="Value" Value="Id" Type="String" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -158,8 +254,32 @@
       <Attributes>
         <Attribute StaticName="AttributeNames" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" KeyNumber="10814">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Name" Value="AttributeNames" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="Attribute Names" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Write the attributes you want to keep in here. All others won't be passed on and won't be available upstream.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="2fb0128a-5ebe-447c-ac5e-57aed4650b3c" KeyNumber="10814" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.AttributeFilter" Name="|Config ToSic.Eav.DataSources.AttributeFilter" Description="used to configure an AttributeFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="AttributeNames" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" KeyNumber="10814">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="Attribute Names" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Write the attributes you want to keep in here. All others won't be passed on and won't be available upstream.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="2fb0128a-5ebe-447c-ac5e-57aed4650b3c" KeyNumber="10814" />
@@ -257,6 +377,7 @@
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5552490c-89b9-466f-8960-85fda043ace6" KeyNumber="10815">
             <Value Key="DefaultValue" Value="Cache All Streams Data Source" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Just a nice title so you know what this cache-component should do for you. Learn more about the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot;&gt;CacheAllStreams&lt;/a&gt;&amp;nbsp;data source.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -265,20 +386,84 @@
         </Attribute>
         <Attribute StaticName="RefreshOnSourceRefresh" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8da8b556-7441-4292-81f3-f36d444f5df9" KeyNumber="10816">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="True" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Refresh On Source Refresh" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This is to cache things where the up-stream is already cached - for example when caching a filtered list of 2sxc-content-items. When this is set, the cache will check if the up-stream has been reloaded and if it has, then it will rebuild this cache as well. Learn more and check out best practices in&amp;nbsp;&lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px; line-height: 18px;&quot;&gt;help&lt;/a&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="58533ee6-81da-42df-ac36-a8dc10d8846b" KeyNumber="10816">
+            <Value Key="DropdownValues" Value="true&#xA;false" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="CacheDurationInSeconds" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2ffc0160-7ac0-4534-b7ad-492a581c9cf3" KeyNumber="10817">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="86400" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Cache Duration In Seconds" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;How long the cache will be kept / when it will be refreshed automatically. Common numbers are 86400 (1 day) or 3600 (1 hour). Learn more in &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8a187244-d25a-4019-82a2-0d0a507b859e" KeyNumber="10817">
+            <Value Key="DropdownValues" Value="10 seconds:10&#xA;1 minute:60&#xA;1 hour:3600&#xA;1 day:86400" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Caches.CacheAllStreams" Name="|Config ToSic.Eav.DataSources.Caches.CacheAllStreams" Description="Configuration for CacheAllStreams data source" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5552490c-89b9-466f-8960-85fda043ace6" KeyNumber="10815">
+            <Value Key="DefaultValue" Value="Cache All Streams Data Source" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a nice title so you know what this cache-component should do for you. Learn more about the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot;&gt;CacheAllStreams&lt;/a&gt;&amp;nbsp;data source.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="RefreshOnSourceRefresh" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8da8b556-7441-4292-81f3-f36d444f5df9" KeyNumber="10816">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="True" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Refresh On Source Refresh" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is to cache things where the up-stream is already cached - for example when caching a filtered list of 2sxc-content-items. When this is set, the cache will check if the up-stream has been reloaded and if it has, then it will rebuild this cache as well. Learn more and check out best practices in&amp;nbsp;&lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px; line-height: 18px;&quot;&gt;help&lt;/a&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 18px;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="58533ee6-81da-42df-ac36-a8dc10d8846b" KeyNumber="10816">
+            <Value Key="DropdownValues" Value="true&#xA;false" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="CacheDurationInSeconds" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="2ffc0160-7ac0-4534-b7ad-492a581c9cf3" KeyNumber="10817">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="86400" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Cache Duration In Seconds" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;How long the cache will be kept / when it will be refreshed automatically. Common numbers are 86400 (1 day) or 3600 (1 hour). Learn more in &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-cacheallstreams&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8a187244-d25a-4019-82a2-0d0a507b859e" KeyNumber="10817">
+            <Value Key="DropdownValues" Value="10 seconds:10&#xA;1 minute:60&#xA;1 hour:3600&#xA;1 day:86400" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -414,6 +599,7 @@
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ffee6fe6-bd48-4da4-87fb-8645af408cbb" KeyNumber="10818">
             <Value Key="DefaultValue" Value="Csv Data Source" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Just a title to help you know what this is for. Read more in &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -423,6 +609,7 @@
         <Attribute StaticName="FilePath" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d67d3b2e-e929-4aec-bbb2-133a42b535a7" KeyNumber="10819">
             <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="File Path" Type="String" />
             <Value Key="Notes" Value="File path relative to the web root, for example '/Portals/0/Data/MyMeasurements.csv'.&amp;nbsp;Read the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&lt;/a&gt; for more." Type="String" />
             <Value Key="Required" Value="True" Type="Boolean" />
@@ -431,16 +618,25 @@
         </Attribute>
         <Attribute StaticName="Delimiter" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="070d8dd9-9f77-4477-86ae-c5fba15fcafa" KeyNumber="10820">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value=";" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Value Delimiter" Type="String" />
             <Value Key="Notes" Value="Delimiter of values in the&amp;nbsp;rows, for example the&amp;nbsp;';', ','&amp;nbsp;or tab. Leave blank for default (i.e.&amp;nbsp;the tab). Read the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more incl. how to add special characters like tab." Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="abc35e60-4770-4c1c-924c-c6a01a9c6446" KeyNumber="10820">
+            <Value Key="DropdownValues" Value=",&#xA;;" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ContentType" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9df5c027-d058-4fa5-bbcc-0130d60afd57" KeyNumber="10821">
             <Value Key="DefaultValue" Value="Csv Data" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Content Type Name" Type="String" />
             <Value Key="Notes" Value="The&amp;nbsp;content type of the entities passed to the output stream. This can be an arbitrary name. See the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
             <Value Key="Required" Value="True" Type="Boolean" />
@@ -450,6 +646,7 @@
         <Attribute StaticName="IdColumnName" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d65dbbdc-a54a-4969-bd25-9cdc52ee520b" KeyNumber="10822">
             <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Id Column Name" Type="String" />
             <Value Key="Notes" Value="The &lt;em&gt;case sensitive&lt;/em&gt; name of the column that should be used for the entity IDs. If no name is specified, the row numbers will be used for the IDs.&amp;nbsp;See the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -459,6 +656,78 @@
         <Attribute StaticName="TitleColumnName" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="73f64afd-362a-4735-8983-2d4617d2a7df" KeyNumber="10823">
             <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title Column Name" Type="String" />
+            <Value Key="Notes" Value="The &lt;em&gt;case sensitive&lt;/em&gt; name of the column&amp;nbsp;used for the entity titles. Leave blank to automatically take the first column. Read the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.CsvDataSource" Name="|Config ToSic.Eav.DataSources.CsvDataSource" Description="Configure the CSV data source." Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ffee6fe6-bd48-4da4-87fb-8645af408cbb" KeyNumber="10818">
+            <Value Key="DefaultValue" Value="Csv Data Source" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title to help you know what this is for. Read more in &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="FilePath" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d67d3b2e-e929-4aec-bbb2-133a42b535a7" KeyNumber="10819">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="File Path" Type="String" />
+            <Value Key="Notes" Value="File path relative to the web root, for example '/Portals/0/Data/MyMeasurements.csv'.&amp;nbsp;Read the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&lt;/a&gt; for more." Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Delimiter" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="070d8dd9-9f77-4477-86ae-c5fba15fcafa" KeyNumber="10820">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value=";" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Value Delimiter" Type="String" />
+            <Value Key="Notes" Value="Delimiter of values in the&amp;nbsp;rows, for example the&amp;nbsp;';', ','&amp;nbsp;or tab. Leave blank for default (i.e.&amp;nbsp;the tab). Read the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more incl. how to add special characters like tab." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="abc35e60-4770-4c1c-924c-c6a01a9c6446" KeyNumber="10820">
+            <Value Key="DropdownValues" Value=",&#xA;;" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ContentType" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9df5c027-d058-4fa5-bbcc-0130d60afd57" KeyNumber="10821">
+            <Value Key="DefaultValue" Value="Csv Data" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Content Type Name" Type="String" />
+            <Value Key="Notes" Value="The&amp;nbsp;content type of the entities passed to the output stream. This can be an arbitrary name. See the &lt;a href=&quot;http://2sxc.org/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IdColumnName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d65dbbdc-a54a-4969-bd25-9cdc52ee520b" KeyNumber="10822">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Id Column Name" Type="String" />
+            <Value Key="Notes" Value="The &lt;em&gt;case sensitive&lt;/em&gt; name of the column that should be used for the entity IDs. If no name is specified, the row numbers will be used for the IDs.&amp;nbsp;See the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TitleColumnName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="73f64afd-362a-4735-8983-2d4617d2a7df" KeyNumber="10823">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title Column Name" Type="String" />
             <Value Key="Notes" Value="The &lt;em&gt;case sensitive&lt;/em&gt; name of the column&amp;nbsp;used for the entity titles. Leave blank to automatically take the first column. Read the &lt;a href=&quot;http://2sxc.org/en/help?tag=ds-csv&quot; target=&quot;_blank&quot;&gt;online help&amp;nbsp;&lt;/a&gt;for more." Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -480,15 +749,92 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityIdFilter" Name="|Config ToSic.Eav.DataSources.EntityIdFilter" Description="used to configure an EntityIdFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="EntityIds" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f5417b6e-d4e9-4438-9d41-7b2a05e9e9f7" KeyNumber="10824">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Name" Value="EntityIds" Type="String" />
+            <Value Key="Notes" Value="Comma separated list of Entity IDs, like 503,522,5066,32" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="3d3a9bd6-f0b7-41d2-a8f0-7dd8306f65dc" KeyNumber="10824" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" Name="|Config ToSic.Eav.DataSources.EntityTypeFilter" Description="used to configure an EntityTypeFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="TypeName" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="21ab2b50-e283-4fe1-bea1-524e4466e4fb" KeyNumber="10825">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Name" Value="TypeName" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Name" Value="Content Type" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The name of the content type&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="1b37f2ab-6a48-48d2-a1b9-ad6de5d31a5b" KeyNumber="10825" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="11cd2452-30c6-4aff-871b-a9e7bd542ec5" KeyNumber="10825">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="" Type="String" />
+            <Value Key="Value" Value="StaticName" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" Name="|Config ToSic.Eav.DataSources.EntityTypeFilter" Description="used to configure an EntityTypeFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="TypeName" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="21ab2b50-e283-4fe1-bea1-524e4466e4fb" KeyNumber="10825">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown-query" Type="String" />
+            <Value Key="Name" Value="Content Type" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The name of the content type&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="1b37f2ab-6a48-48d2-a1b9-ad6de5d31a5b" KeyNumber="10825" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="11cd2452-30c6-4aff-871b-a9e7bd542ec5" KeyNumber="10825">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="Label" Value="Name" Type="String" />
+            <Value Key="Query" Value="Eav.Queries.Global.ContentTypes" Type="String" />
+            <Value Key="Separator" Value="," Type="String" />
+            <Value Key="StreamName" Value="Default" Type="String" />
+            <Value Key="UrlParameters" Value="" Type="String" />
+            <Value Key="Value" Value="StaticName" Type="String" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.OwnerFilter" Name="|Config ToSic.Eav.DataSources.OwnerFilter" Description="to configure the owner-filter" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="IdentityCode" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a87a030b-a735-4462-ae6c-1b9050ea392e" KeyNumber="10826">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="dnn:userid=[User:UserId]" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Identity Code" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The&amp;nbsp;identifier of the user - in DNN it could be the sequence 'dnn:userid=[User:UserId]'. Learn more on &lt;a href=&quot;//2sxc.org/help?tag=datasource-filter-owner&quot; target=&quot;_blank&quot;&gt;2sxc.org/help?tag=datasource-filter-owner&lt;/a&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="39f7ea07-edc5-4e0f-8a8b-71d89be993b4" KeyNumber="10826">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -525,20 +871,83 @@
         </Attribute>
         <Attribute StaticName="PageSize" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7ef12a73-934b-4ce4-a83e-eaf3eb1ffa66" KeyNumber="10828">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="10" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="PageSize" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Amount of items per page. By default this is 10. Also set this to the amount you want if you're using this to just get a short-list of 5 items or something - then set to 5. You could also use parameters like [QueryString:ItemsPerPage] but in general you'll probably want a number or something.&amp;nbsp;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a73b5bf7-e580-4e0e-a55b-7c5ad42ac7c2" KeyNumber="10828">
+            <Value Key="DropdownValues" Value="10&#xA;25&#xA;50&#xA;100&#xA;get count from url:[QueryString:Count]&#xA;get pagesize from url:[QueryString:PageSize]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
         <Attribute StaticName="PageNumber" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ea6ec57d-28f7-4584-a9c6-b7dd70a034fd" KeyNumber="10829">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="1" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="PageNumber" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;The page we're on, by default it's 1. If you only want to use the first page (like get the top 5 of something) then set 1. Otherwise use a url parameter or something - so you would use [QueryString:Page] or similar. Check out&amp;nbsp;&lt;span&gt;&lt;a href=&quot;2sxc.org/help?tag=ds-paging&quot; target=&quot;_blank&quot;&gt;2sxc.org/help?tag=ds-paging&lt;/a&gt; for more help.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="e843f374-dfce-4385-a214-35b1f1314f67" KeyNumber="10829">
+            <Value Key="DropdownValues" Value="1&#xA;get page from url:[QueryString:Page]&#xA;get p from url:[QueryString:P]&#xA;get PageNum from url:[QueryString:PageNum]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Paging" Name="|Config ToSic.Eav.DataSources.Paging" Description="Configuration of Paging DataSources" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="41bbb177-0bff-4421-8034-556c082199cd" KeyNumber="10827">
+            <Value Key="DefaultValue" Value="Paging data source" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Any title you want - for your convenience to name this. If you need any help, check out &lt;a href=&quot;2sxc.org/help?tag=ds-paging&quot; target=&quot;_blank&quot;&gt;2sxc.org/help?tag=ds-paging&lt;/a&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="PageSize" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7ef12a73-934b-4ce4-a83e-eaf3eb1ffa66" KeyNumber="10828">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="10" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="PageSize" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Amount of items per page. By default this is 10. Also set this to the amount you want if you're using this to just get a short-list of 5 items or something - then set to 5. You could also use parameters like [QueryString:ItemsPerPage] but in general you'll probably want a number or something.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a73b5bf7-e580-4e0e-a55b-7c5ad42ac7c2" KeyNumber="10828">
+            <Value Key="DropdownValues" Value="10&#xA;25&#xA;50&#xA;100&#xA;get count from url:[QueryString:Count]&#xA;get pagesize from url:[QueryString:PageSize]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="PageNumber" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ea6ec57d-28f7-4584-a9c6-b7dd70a034fd" KeyNumber="10829">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="1" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="PageNumber" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The page we're on, by default it's 1. If you only want to use the first page (like get the top 5 of something) then set 1. Otherwise use a url parameter or something - so you would use [QueryString:Page] or similar. Check out&amp;nbsp;&lt;span&gt;&lt;a href=&quot;2sxc.org/help?tag=ds-paging&quot; target=&quot;_blank&quot;&gt;2sxc.org/help?tag=ds-paging&lt;/a&gt; for more help.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="e843f374-dfce-4385-a214-35b1f1314f67" KeyNumber="10829">
+            <Value Key="DropdownValues" Value="1&#xA;get page from url:[QueryString:Page]&#xA;get p from url:[QueryString:P]&#xA;get PageNum from url:[QueryString:PageNum]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -1394,7 +1803,7 @@
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="==" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Operator" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -1414,13 +1823,17 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="417cdfe0-8f36-4a5f-96fe-89a6546e7673" KeyNumber="10834">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b84854fe-d4da-4769-acf9-3732ce51d99b" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01'&#xA;!between for dates - use '2016-01-01 and 2017-01-01'&#xA;get Operator from url:[QueryString:Operator]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
         </Attribute>
         <Attribute StaticName="Take" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="906caad5-c07d-4f7a-bcb1-da6b3b946350" KeyNumber="10835">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
             <Value Key="Name" Value="Take / Stop after so many" Type="String" />
             <Value Key="Notes" Value="&lt;p&gt;Get only 1 or whatever amount you need. This improves performance if you have many thousand items, and only need a few. Leave blank to take all.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="False" Type="Boolean" />
@@ -1440,10 +1853,130 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f92ce3b1-daf5-43d7-aa4d-419cd758c73f" KeyNumber="10835">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="6db381e4-68ed-45ef-9e22-ec7777f43865" KeyNumber="10835">
+            <Value Key="DropdownValues" Value="all (leave blank):&#xA;10&#xA;25&#xA;50&#xA;100&#xA;[QueryString:max]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Name="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueFilter" Name="|Config ToSic.Eav.DataSources.ValueFilter" Description="used to configure a ValueFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Attribute" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7436af3b-2aef-40aa-9534-58c1cf9bfbeb" KeyNumber="10832">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="UrlId" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Attribute" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The object attribute (property) we will filter on, like &quot;FirstName&quot; or similar. Find more &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help about this filter here&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="d943cf51-22d1-4566-817d-13796d52ce01" KeyNumber="10832">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="db64e023-a504-449d-b519-4fd74f5a7bcc" KeyNumber="10832">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Value" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7c3adf68-41ae-4bc0-8aa7-5c94e4991b04" KeyNumber="10833">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="[QueryString:Id]" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Value" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The information we want to use to filter - like &quot;John&quot; or &quot;[QueryString:Name]&quot;. There are many&amp;nbsp;things you can do with this, so always &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;check more information in help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="69ab602d-889a-47a4-b9bf-71955ff335fa" KeyNumber="10833">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f7b3632a-af0d-427f-a786-94dcbcd59d36" KeyNumber="10833">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Operator" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b6f685cc-4903-4c89-8377-3be3748623dd" KeyNumber="10834">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="==" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Operator" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="4e1fdee3-f870-41ef-acb4-aab09905eed0" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="417cdfe0-8f36-4a5f-96fe-89a6546e7673" KeyNumber="10834">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b84854fe-d4da-4769-acf9-3732ce51d99b" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01'&#xA;!between for dates - use '2016-01-01 and 2017-01-01'&#xA;get Operator from url:[QueryString:Operator]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Take" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="906caad5-c07d-4f7a-bcb1-da6b3b946350" KeyNumber="10835">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Take / Stop after so many" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Get only 1 or whatever amount you need. This improves performance if you have many thousand items, and only need a few. Leave blank to take all.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="49fc6c3a-c5f0-4c86-be57-5504d83485c4" KeyNumber="10835">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="ValidationAutomatic" Value="" Type="String" />
+            <Value Key="ValidationRegEx" Value="" Type="String" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="WysiwygHeight" Value="" Type="Number" />
+            <Value Key="WysiwygWidth" Value="" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f92ce3b1-daf5-43d7-aa4d-419cd758c73f" KeyNumber="10835">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="6db381e4-68ed-45ef-9e22-ec7777f43865" KeyNumber="10835">
+            <Value Key="DropdownValues" Value="all (leave blank):&#xA;10&#xA;25&#xA;50&#xA;100&#xA;[QueryString:max]" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="d98db323-7c33-4f2a-b173-ef91c0875124" Name="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="eb7cacd2-6da7-42cf-a38c-3c1e0b6f4457" KeyNumber="10798">
@@ -1452,6 +1985,22 @@
             <Value Key="Notes" Value="&lt;p&gt;Just a title for you to give this configuration a name.&lt;/p&gt;" Type="String" />
             <Value Key="Required" Value="True" Type="Boolean" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8898809b-f758-46b0-9e60-5dc543100107" KeyNumber="11430">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;just some notes if you want them...&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="97e0be58-3513-4e0d-89b9-27bb90c6db4d" KeyNumber="11430">
+            <Value Key="RowCount" Value="3" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="ModuleId" Type="String" IsTitle="false">
@@ -1824,6 +2373,54 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Use this to configure a query-info datasource. This is a very advanced topic, read more about it in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSources-QueryInfo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="|Config ToSic.Eav.DataSources.QueryInfo" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="588a0fe7-d1ea-430c-873e-761660a358d9" KeyString="|Config ToSic.Eav.DataSources.App">
+      <Value Key="Description" Value="used to configure an App DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Learn more about the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-App&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;App data source in the wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.Eav.DataSources.App" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="a7d07d42-32ad-4ad6-ae9f-3e5c7aa006c2" KeyString="|Config ToSic.Eav.DataSources.EntityTypeFilter">
+      <Value Key="Description" Value="used to configure an EntityTypeFilter DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Learn more about the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-ContentTypeFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;content-type / Entity-type filter in the wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.Eav.DataSources.EntityTypeFilter" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="ac8e7948-52fa-4f9f-abc6-f3527ac58186" KeyString="d98db323-7c33-4f2a-b173-ef91c0875124">
+      <Value Key="Description" Value="Configuration for the Form and List Data Source" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;This data-source lets you access FnL (UDT) data and process / show it in 2sxc. Here is the &lt;a href=&quot;https://github.com/2sic/dnn-datasource-form-and-list/wiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; if you need it (still work in progress...)&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="4c5f7f1a-237c-430f-ae36-8b35b9a518ef" KeyString="|Config ToSic.Eav.DataSources.OwnerFilter">
+      <Value Key="Description" Value="to configure the owner-filter" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Used to show only items which were created / owned by a specific owner. Read the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-OwnerFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt; for more.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.Eav.DataSources.OwnerFilter" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="066dcac5-c6fc-4c9e-85ad-f584b49a22cf" KeyString="|Config ToSic.Eav.DataSources.AttributeFilter">
+      <Value Key="Description" Value="used to configure an AttributeFilter DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Use this to filter out attributes you don't want to pass on. This is usually to keep the output smaller, or to hide fields which you don't want to be published on the wire. Read about it in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-AttributeFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.Eav.DataSources.AttributeFilter" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="12886273-383d-448f-a55a-804cd01aafa7" KeyString="|Config ToSic.Eav.DataSources.EntityIdFilter">
+      <Value Key="Description" Value="used to configure an EntityIdFilter DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Use the Item-Id Filter to keep only one or a few items - of which you know the ID. The ID can also come from a URL or something, when used in details-pages. Read about it in the &lt;a href=&quot;https://github.com/2sic/2sxc/wiki/DotNet-DataSource-ItemIdFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="|Config ToSic.Eav.DataSources.EntityIdFilter" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
