@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.21.01" ExportDate="2019-12-10T17:52:36.9655834+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.26.01" ExportDate="2020-03-18T09:17:13.5655707+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-US" />
@@ -1742,6 +1742,50 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="67b19864-df6d-400b-9f37-f41f1dd69c4a" Name="|Config ToSic.Eav.DataSources.StreamPick" Description="Configure a Stream-Pick Data Source" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="StreamName" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="12e1ef4e-9ef9-47ba-8504-6c444a27fc42" KeyNumber="18819">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Default" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Stream Name" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Name of the stream to be provided.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="52c9a309-42f5-4597-a4be-8114a476bcc3" KeyNumber="18819">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="49aee364-192f-4c0a-8068-fa284b24eb49" KeyNumber="18819" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="67b19864-df6d-400b-9f37-f41f1dd69c4a" Name="|Config ToSic.Eav.DataSources.StreamPick" Description="Configure a Stream-Pick Data Source" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="StreamName" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="12e1ef4e-9ef9-47ba-8504-6c444a27fc42" KeyNumber="18819">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Default" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Stream Name" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Name of the stream to be provided.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="52c9a309-42f5-4597-a4be-8114a476bcc3" KeyNumber="18819">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="49aee364-192f-4c0a-8068-fa284b24eb49" KeyNumber="18819" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueFilter" Name="|Config ToSic.Eav.DataSources.ValueFilter" Description="used to configure a ValueFilter DataSource" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Attribute" Type="String" IsTitle="true">
@@ -2540,6 +2584,184 @@
     <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="c5918cb8-d35a-48c7-9380-a437edde66d2" Name="AttributeRename" Description="" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="52bc209f-9df6-46ee-a9c8-c5f897e99d3a" KeyNumber="19825">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Attribute Rename Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title so you know what this configuration is for.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="bf55f28a-6fba-4aa9-9b45-b207b0bd9c26" KeyNumber="19825">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1f1bfb85-2d7c-4ae6-ab12-34d924f3c1e5" KeyNumber="19825" />
+        </Attribute>
+        <Attribute StaticName="AttributeMap" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c7aa1cc5-d686-48a6-8ba9-9f87a378e98a" KeyNumber="19826">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="NewField1=OldField1&#xA;NewField2=OldField2" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Attribute Map" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The renaming map for the attributes. This is multi-line, one rename per line. The syntax:&lt;/p&gt;&#xA;&lt;p&gt;NewFieldName=OldFieldName&lt;br /&gt;NewField2=OldFieldName2&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42591d43-2d82-4752-aa28-9a10896472ab" KeyNumber="19826">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="51271a1a-8379-4ba8-88f4-eaf26bbc8c0f" KeyNumber="19826">
+            <Value Key="RowCount" Value="10.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac272821-e90e-4975-9e1b-af467f4c5990" KeyNumber="19829">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Advanced" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Advanced settings - we recommend to leave the default settings.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="f2ad7355-6248-453b-9cc0-154d8f6339be" KeyNumber="19829">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="KeepOtherAttributes" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3cfeeb1c-05df-4869-949b-e14f5ad0a707" KeyNumber="19827">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="true" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Keep Other Attributes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If true, the attributes / fields / properties which have not been renamed are preserved. If false, your new Entity only contains the renamed fields.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TypeName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5c1cb2e2-b63b-471b-92e2-c40eaf6b039d" KeyNumber="19828">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Type Name" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Leave empty to keep the previous type name. If you add something here, the modified entities will have this new type name.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6d8b647c-ded6-4009-934e-c7bedc017b00" KeyNumber="19828">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="23e8f194-185e-45e4-85dd-5f3b01bef27d" KeyNumber="19828" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="c5918cb8-d35a-48c7-9380-a437edde66d2" Name="AttributeRename" Description="" Scope="System" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="52bc209f-9df6-46ee-a9c8-c5f897e99d3a" KeyNumber="19825">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Attribute Rename Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title so you know what this configuration is for.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="bf55f28a-6fba-4aa9-9b45-b207b0bd9c26" KeyNumber="19825">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1f1bfb85-2d7c-4ae6-ab12-34d924f3c1e5" KeyNumber="19825" />
+        </Attribute>
+        <Attribute StaticName="AttributeMap" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c7aa1cc5-d686-48a6-8ba9-9f87a378e98a" KeyNumber="19826">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="NewField1=OldField1&#xA;NewField2=OldField2" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Attribute Map" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The renaming map for the attributes. This is multi-line, one rename per line. The syntax:&lt;/p&gt;&#xA;&lt;p&gt;NewFieldName=OldFieldName&lt;br /&gt;NewField2=OldFieldName2&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="42591d43-2d82-4752-aa28-9a10896472ab" KeyNumber="19826">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="51271a1a-8379-4ba8-88f4-eaf26bbc8c0f" KeyNumber="19826">
+            <Value Key="RowCount" Value="10.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupAdvanced" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ac272821-e90e-4975-9e1b-af467f4c5990" KeyNumber="19829">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Advanced" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Advanced settings - we recommend to leave the default settings.&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="f2ad7355-6248-453b-9cc0-154d8f6339be" KeyNumber="19829">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="KeepOtherAttributes" Type="Boolean" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3cfeeb1c-05df-4869-949b-e14f5ad0a707" KeyNumber="19827">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="true" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Keep Other Attributes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If true, the attributes / fields / properties which have not been renamed are preserved. If false, your new Entity only contains the renamed fields.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TypeName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5c1cb2e2-b63b-471b-92e2-c40eaf6b039d" KeyNumber="19828">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Type Name" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Leave empty to keep the previous type name. If you add something here, the modified entities will have this new type name.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="6d8b647c-ded6-4009-934e-c7bedc017b00" KeyNumber="19828">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="23e8f194-185e-45e4-85dd-5f3b01bef27d" KeyNumber="19828" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="1fffb7ab-faca-4a20-91f1-5077bc5771fa" Name="Dummy1" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="aoeu" Type="String" IsTitle="true">
@@ -2944,6 +3166,24 @@
       <Value Key="EditInstructions" Value="&lt;p&gt;Request data from another query. See &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Eav.DataSources.QueryRun.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="Query Configuration" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="994aa260-2b0e-4a32-9452-7bef1ff43634" KeyString="67b19864-df6d-400b-9f37-f41f1dd69c4a">
+      <Value Key="Description" Value="Configure a Stream-Pick Data Source" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Pick a stream to be passed on. Usually you will use some kind of parameter, like [Params:Stream]&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Stream Pick" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="22bb9fea-e354-4fbe-8271-c74c917840b8" KeyString="c5918cb8-d35a-48c7-9380-a437edde66d2">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Modify how attributes are renamed. For more information, check out the &lt;a href=&quot;https://r.2sxc.org/DsAttributeRename&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AttributeRename&lt;/a&gt; docs.&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Attribute Rename Configuration" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
       <Value Key="ListInstructions" Value="" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
