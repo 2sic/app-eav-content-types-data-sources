@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.12.01" ExportDate="2021-03-25T13:56:54.5047722+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.12.01" ExportDate="2021-03-25T21:26:37.1020397+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -287,6 +287,858 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="23e8f194-185e-45e4-85dd-5f3b01bef27d" Json="True" KeyNumber="19828" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="5c84cd3f-f853-40b3-81cf-dee6a07dc411" Name="DsSerializationConfiguration" Description="Used to configure a Serialization DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a94de776-35ed-47f1-af0f-25cffa11ac83" Json="True" KeyNumber="24600">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Serialization Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title for you to identify this data.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="19780bed-87b8-4510-9b79-24ac7ca8ba73" Json="True" KeyNumber="24600">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="514a1037-9e7f-40f8-b07d-fb6f06aa366b" Json="True" KeyNumber="24600" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cc20498e-239c-497b-b416-7b144cfbc6c8" Json="True" KeyNumber="24601">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Notes for your own use, to document why you did this.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="90172cab-8948-4ae1-b1a5-06682d736069" Json="True" KeyNumber="24601">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="09bf74c7-6425-4baf-ab69-cd0ab8ae4b79" Json="True" KeyNumber="24601">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupSystemProperties" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c17ebb79-d707-4ce4-8ce0-10556d811f38" Json="True" KeyNumber="24589">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="System Properties" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is about general system properties like ID, Guid and internal dates etc.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="35c9aa01-f3bc-45ab-8a95-cd03d656d54a" Json="True" KeyNumber="24589">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9251a6fb-c953-445a-80a0-d842efc6bf31" Json="True" KeyNumber="24590">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9afd84d4-c1ad-4a7e-9996-a91567d9a337" Json="True" KeyNumber="24590">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="81d352a9-528b-42b4-93da-046d7c799fdf" Json="True" KeyNumber="24590">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ee0ac4c-be6f-4cf5-8220-32a967f3b705" Json="True" KeyNumber="24591">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56357812-54f1-433a-9389-bed89c5aa1b1" Json="True" KeyNumber="24591">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="05151ecd-87ec-4a10-8451-c4de15beaa7c" Json="True" KeyNumber="24591">
+            <Value Key="DropdownValues" Value="System Default (include for editors, don't for viewers):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4cc2648e-74e8-48c6-befd-12ccfc83c4f6" Json="True" KeyNumber="24592">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7debff63-f3c6-41e5-8d12-1cb9b3c0d19a" Json="True" KeyNumber="24592">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="344a28b5-3321-4b8b-a418-699e7b0f205e" Json="True" KeyNumber="24592">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeCreated" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a1c36ca1-35f3-44ff-9b18-fb0696582c3b" Json="True" KeyNumber="24593">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Created Date" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3d4f16b4-7b7e-43b6-b4b8-a99762e2a63e" Json="True" KeyNumber="24593">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="f82133a7-7c60-41fb-ab15-b09790d218f6" Json="True" KeyNumber="24593">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeModified" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5e6076d4-38c9-4777-af80-74941d411aa0" Json="True" KeyNumber="24594">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Modified Date" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="f27ca86d-c33c-4561-b755-0b2cb3acb819" Json="True" KeyNumber="24594">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="43bc2390-67d7-45a0-b82c-61012ae70e75" Json="True" KeyNumber="24594">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupRelationshipProperties" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="04139ddc-10a5-4ace-9bd7-ce055dadd534" Json="True" KeyNumber="24596">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Relationships" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This determines how information about related items / entities are included in the JSON.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="77b79718-f61b-4923-9017-fdff5846f091" Json="True" KeyNumber="24596">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationships" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b94ea98a-30d1-4345-97d8-05a153364604" Json="True" KeyNumber="24611">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Include Relationships" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1bec5f1c-3d34-4adb-a84d-b4b856d214fd" Json="True" KeyNumber="24611">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fabc9c19-4d57-4c6f-8f16-4008f1b3c604" Json="True" KeyNumber="24611">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c18e9209-7a9f-49e5-86ae-3ca839b00252" Json="True" KeyNumber="24597">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="239e1ccf-1b95-4628-bac4-585f5d22c655" Json="True" KeyNumber="24597">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="0c65b2b0-606e-45e1-b56c-7b12588e2d05" Json="True" KeyNumber="24597">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="19ab21c4-a01a-4d0e-9de5-e9199e8472d8" Json="True" KeyNumber="24598">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9029512e-080c-4144-8ca6-ceb6369f569e" Json="True" KeyNumber="24598">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="7f4dbc5f-8f95-40f3-b6cf-e08453793d1b" Json="True" KeyNumber="24598">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bf72b2eb-b165-48e1-9fc0-3ec583f51814" Json="True" KeyNumber="24599">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="8feb67b0-2a4c-4c4d-b044-8107fdff60e9" Json="True" KeyNumber="24599">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b8c22f77-9f56-43bf-a095-bae2c4f2a7dd" Json="True" KeyNumber="24599">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupMetadata" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d9332400-888a-4972-95f3-c282b33c36fb" Json="True" KeyNumber="24606">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Metadata" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;In case you're new to Metadata, read the &lt;a href=&quot;https://r.2sxc.org/metadata&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="07ab6152-b6c4-4d9c-bc17-e5d788989dec" Json="True" KeyNumber="24606">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataFor" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5a8d5bdf-a9e3-46fb-91ac-181fe62555b3" Json="True" KeyNumber="24595">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata-For information" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If you need to know more, read about &lt;a href=&quot;https://r.2sxc.org/metadata&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;metadata&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="37f994eb-bb4a-45f8-bef3-85021d4a0e8b" Json="True" KeyNumber="24595">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="68e745a0-3194-4faf-93d5-5180e2c308f6" Json="True" KeyNumber="24595">
+            <Value Key="DropdownValues" Value="System Default (include for editors, don't for viewers):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadata" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8d176fb0-f52a-489e-b1c3-d7b8b5971cbd" Json="True" KeyNumber="24610">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Include Metadata" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="fa838c83-210e-4d06-a88c-79b003d190ae" Json="True" KeyNumber="24610">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ad69c663-5ca5-40dc-859a-fc6f39fe47b9" Json="True" KeyNumber="24610" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="ba7eea6f-e077-4791-89c6-a27af84f8d11" Json="True" KeyNumber="24610">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3ea1478a-e04a-481d-b838-680c26c260a8" Json="True" KeyNumber="24607">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c007f56e-76c6-4b93-b751-ccc4d9a553c8" Json="True" KeyNumber="24607">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="6eb95953-f224-4542-8a4f-b0ce2f145317" Json="True" KeyNumber="24607">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="453ec67b-d12a-4622-b9f8-2405d01e4574" Json="True" KeyNumber="24608">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="4afe2533-f277-44b2-9a06-5b66d256e34f" Json="True" KeyNumber="24608">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fe629d77-e876-4d40-876b-4ec9f5ea6ff0" Json="True" KeyNumber="24608">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="19d60555-7c29-4711-8015-05a62c3271b3" Json="True" KeyNumber="24609">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="87a255b6-fb39-4574-9467-acd03aabaa6a" Json="True" KeyNumber="24609">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d84062b3-c483-4e56-a966-6dc3c7110130" Json="True" KeyNumber="24609">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="5c84cd3f-f853-40b3-81cf-dee6a07dc411" Name="DsSerializationConfiguration" Description="Used to configure a Serialization DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a94de776-35ed-47f1-af0f-25cffa11ac83" Json="True" KeyNumber="24600">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Serialization Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title for you to identify this data.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="19780bed-87b8-4510-9b79-24ac7ca8ba73" Json="True" KeyNumber="24600">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="514a1037-9e7f-40f8-b07d-fb6f06aa366b" Json="True" KeyNumber="24600" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cc20498e-239c-497b-b416-7b144cfbc6c8" Json="True" KeyNumber="24601">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Notes for your own use, to document why you did this.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="90172cab-8948-4ae1-b1a5-06682d736069" Json="True" KeyNumber="24601">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="09bf74c7-6425-4baf-ab69-cd0ab8ae4b79" Json="True" KeyNumber="24601">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupSystemProperties" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c17ebb79-d707-4ce4-8ce0-10556d811f38" Json="True" KeyNumber="24589">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="System Properties" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This is about general system properties like ID, Guid and internal dates etc.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="35c9aa01-f3bc-45ab-8a95-cd03d656d54a" Json="True" KeyNumber="24589">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9251a6fb-c953-445a-80a0-d842efc6bf31" Json="True" KeyNumber="24590">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9afd84d4-c1ad-4a7e-9996-a91567d9a337" Json="True" KeyNumber="24590">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="81d352a9-528b-42b4-93da-046d7c799fdf" Json="True" KeyNumber="24590">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ee0ac4c-be6f-4cf5-8220-32a967f3b705" Json="True" KeyNumber="24591">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="56357812-54f1-433a-9389-bed89c5aa1b1" Json="True" KeyNumber="24591">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="05151ecd-87ec-4a10-8451-c4de15beaa7c" Json="True" KeyNumber="24591">
+            <Value Key="DropdownValues" Value="System Default (include for editors, don't for viewers):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4cc2648e-74e8-48c6-befd-12ccfc83c4f6" Json="True" KeyNumber="24592">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7debff63-f3c6-41e5-8d12-1cb9b3c0d19a" Json="True" KeyNumber="24592">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="344a28b5-3321-4b8b-a418-699e7b0f205e" Json="True" KeyNumber="24592">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeCreated" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a1c36ca1-35f3-44ff-9b18-fb0696582c3b" Json="True" KeyNumber="24593">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Created Date" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3d4f16b4-7b7e-43b6-b4b8-a99762e2a63e" Json="True" KeyNumber="24593">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="f82133a7-7c60-41fb-ab15-b09790d218f6" Json="True" KeyNumber="24593">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeModified" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5e6076d4-38c9-4777-af80-74941d411aa0" Json="True" KeyNumber="24594">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Modified Date" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="f27ca86d-c33c-4561-b755-0b2cb3acb819" Json="True" KeyNumber="24594">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="43bc2390-67d7-45a0-b82c-61012ae70e75" Json="True" KeyNumber="24594">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupRelationshipProperties" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="04139ddc-10a5-4ace-9bd7-ce055dadd534" Json="True" KeyNumber="24596">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Relationships" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;This determines how information about related items / entities are included in the JSON.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="77b79718-f61b-4923-9017-fdff5846f091" Json="True" KeyNumber="24596">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationships" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b94ea98a-30d1-4345-97d8-05a153364604" Json="True" KeyNumber="24611">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Include Relationships" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1bec5f1c-3d34-4adb-a84d-b4b856d214fd" Json="True" KeyNumber="24611">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fabc9c19-4d57-4c6f-8f16-4008f1b3c604" Json="True" KeyNumber="24611">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c18e9209-7a9f-49e5-86ae-3ca839b00252" Json="True" KeyNumber="24597">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="239e1ccf-1b95-4628-bac4-585f5d22c655" Json="True" KeyNumber="24597">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="0c65b2b0-606e-45e1-b56c-7b12588e2d05" Json="True" KeyNumber="24597">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="19ab21c4-a01a-4d0e-9de5-e9199e8472d8" Json="True" KeyNumber="24598">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9029512e-080c-4144-8ca6-ceb6369f569e" Json="True" KeyNumber="24598">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="7f4dbc5f-8f95-40f3-b6cf-e08453793d1b" Json="True" KeyNumber="24598">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeRelationshipTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bf72b2eb-b165-48e1-9fc0-3ec583f51814" Json="True" KeyNumber="24599">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Relationship Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="8feb67b0-2a4c-4c4d-b044-8107fdff60e9" Json="True" KeyNumber="24599">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b8c22f77-9f56-43bf-a095-bae2c4f2a7dd" Json="True" KeyNumber="24599">
+            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupMetadata" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d9332400-888a-4972-95f3-c282b33c36fb" Json="True" KeyNumber="24606">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Metadata" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;In case you're new to Metadata, read the &lt;a href=&quot;https://r.2sxc.org/metadata&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="07ab6152-b6c4-4d9c-bc17-e5d788989dec" Json="True" KeyNumber="24606">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataFor" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5a8d5bdf-a9e3-46fb-91ac-181fe62555b3" Json="True" KeyNumber="24595">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata-For information" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;If you need to know more, read about &lt;a href=&quot;https://r.2sxc.org/metadata&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;metadata&lt;/a&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="37f994eb-bb4a-45f8-bef3-85021d4a0e8b" Json="True" KeyNumber="24595">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="68e745a0-3194-4faf-93d5-5180e2c308f6" Json="True" KeyNumber="24595">
+            <Value Key="DropdownValues" Value="System Default (include for editors, don't for viewers):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadata" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8d176fb0-f52a-489e-b1c3-d7b8b5971cbd" Json="True" KeyNumber="24610">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Include Metadata" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="fa838c83-210e-4d06-a88c-79b003d190ae" Json="True" KeyNumber="24610">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ad69c663-5ca5-40dc-859a-fc6f39fe47b9" Json="True" KeyNumber="24610" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="ba7eea6f-e077-4791-89c6-a27af84f8d11" Json="True" KeyNumber="24610">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataId" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3ea1478a-e04a-481d-b838-680c26c260a8" Json="True" KeyNumber="24607">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Id" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c007f56e-76c6-4b93-b751-ccc4d9a553c8" Json="True" KeyNumber="24607">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="6eb95953-f224-4542-8a4f-b0ce2f145317" Json="True" KeyNumber="24607">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataGuid" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="453ec67b-d12a-4622-b9f8-2405d01e4574" Json="True" KeyNumber="24608">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Guid" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="4afe2533-f277-44b2-9a06-5b66d256e34f" Json="True" KeyNumber="24608">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="fe629d77-e876-4d40-876b-4ec9f5ea6ff0" Json="True" KeyNumber="24608">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeMetadataTitle" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="19d60555-7c29-4711-8015-05a62c3271b3" Json="True" KeyNumber="24609">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Metadata Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="87a255b6-fb39-4574-9467-acd03aabaa6a" Json="True" KeyNumber="24609">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="d84062b3-c483-4e56-a966-6dc3c7110130" Json="True" KeyNumber="24609">
+            <Value Key="DropdownValues" Value="System Default (don't include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -808,7 +1660,93 @@
     </AttributeSet>
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.AttributeFilter" Name="ToSic.Eav.DataSources.AttributeFilter" Description="used to configure an AttributeFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="AttributeNames" Type="String" IsTitle="true">
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f6a58a4d-947f-4e05-b8ae-c6b2760c056e" Json="True" KeyNumber="24603">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Attribute Filter" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title to help you identify this data.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="474e8123-1cb1-4930-bd4a-7132ec13334e" Json="True" KeyNumber="24603">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="57d6d96b-b3ea-432b-b104-edaeabb96fe0" Json="True" KeyNumber="24603" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="314458e9-e426-43a2-a354-defe78fe55b2" Json="True" KeyNumber="24604">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Notes for your own use, to document why you did this.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d481e590-2a91-424a-bacf-afe6a44dcaed" Json="True" KeyNumber="24604">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="4430ce6a-a601-4e70-8053-0adb8557e39f" Json="True" KeyNumber="24604">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupConfiguration" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="adc0f72a-f5b4-413c-b2bb-de7b44aaa0e4" Json="True" KeyNumber="24605">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Configuration" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Put one property name on each line.&lt;/p&gt;&#xA;&lt;p&gt;You can also leave the list empty if to keep all or remove all.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="3e770bc9-9a0b-4079-acce-9ddb7ae3a474" Json="True" KeyNumber="24605">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Mode" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ba338a4-3744-456a-beac-bd62fb07bd5a" Json="True" KeyNumber="24602">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="+" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Filter Mode" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1e833b16-cdc5-4682-8122-45d9b6ff5deb" Json="True" KeyNumber="24602">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="c3e73a09-15c2-48d2-9a74-e4aa54fe9edf" Json="True" KeyNumber="24602">
+            <Value Key="DropdownValues" Value="Keep only attributes/properties listed below (default):+&#xA;Remove only attributes/properties listed below:-" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AttributeNames" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" Json="True" KeyNumber="10814">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -835,7 +1773,93 @@
     </AttributeSet>
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.AttributeFilter" Name="ToSic.Eav.DataSources.AttributeFilter" Description="used to configure an AttributeFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
-        <Attribute StaticName="AttributeNames" Type="String" IsTitle="true">
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f6a58a4d-947f-4e05-b8ae-c6b2760c056e" Json="True" KeyNumber="24603">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Attribute Filter" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Just a title to help you identify this data.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="474e8123-1cb1-4930-bd4a-7132ec13334e" Json="True" KeyNumber="24603">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="57d6d96b-b3ea-432b-b104-edaeabb96fe0" Json="True" KeyNumber="24603" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="314458e9-e426-43a2-a354-defe78fe55b2" Json="True" KeyNumber="24604">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Notes for your own use, to document why you did this.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="d481e590-2a91-424a-bacf-afe6a44dcaed" Json="True" KeyNumber="24604">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="4430ce6a-a601-4e70-8053-0adb8557e39f" Json="True" KeyNumber="24604">
+            <Value Key="ButtonAdvanced" Value="" Type="String" />
+            <Value Key="ButtonSource" Value="" Type="String" />
+            <Value Key="ContentCss" Value="" Type="Hyperlink" />
+            <Value Key="Dialog" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="GroupConfiguration" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="adc0f72a-f5b4-413c-b2bb-de7b44aaa0e4" Json="True" KeyNumber="24605">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Configuration" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Put one property name on each line.&lt;/p&gt;&#xA;&lt;p&gt;You can also leave the list empty if to keep all or remove all.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="3e770bc9-9a0b-4079-acce-9ddb7ae3a474" Json="True" KeyNumber="24605">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Mode" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5ba338a4-3744-456a-beac-bd62fb07bd5a" Json="True" KeyNumber="24602">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="+" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Filter Mode" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1e833b16-cdc5-4682-8122-45d9b6ff5deb" Json="True" KeyNumber="24602">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="c3e73a09-15c2-48d2-9a74-e4aa54fe9edf" Json="True" KeyNumber="24602">
+            <Value Key="DropdownValues" Value="Keep only attributes/properties listed below (default):+&#xA;Remove only attributes/properties listed below:-" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="AttributeNames" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" Json="True" KeyNumber="10814">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -3243,8 +4267,8 @@
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="066dcac5-c6fc-4c9e-85ad-f584b49a22cf" Json="True" KeyString="|Config ToSic.Eav.DataSources.AttributeFilter">
-      <Value Key="Description" Value="used to configure an AttributeFilter DataSource" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;Use this to filter out attributes you don't want to pass on. This is usually to keep the output smaller, or to hide fields which you don't want to be published on the wire. Read about it in the &lt;a href=&quot;https://r.2sxc.org/DsAttributeFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Note that you can comma-separate the names, or put one on each line (recommended).&lt;/p&gt;" Type="String" />
+      <Value Key="Description" Value="Used to configure an AttributeFilter DataSource" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Filter out attributes/properties you don't want to pass on. This is usually to keep the output smaller, or to hide fields which you don't want to be published on the wire. Read about it in the &lt;a href=&quot;https://r.2sxc.org/DsAttributeFilter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String" />
       <Value Key="Icon" Value="" Type="Hyperlink" />
       <Value Key="Label" Value="Attribute/Property Filter" Type="String" />
       <Value Key="Link" Value="" Type="Hyperlink" />
@@ -3359,6 +4383,15 @@
       <Value Key="ListInstructions" Value="" Type="String" />
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="e6cda735-769c-46a3-9c9a-abe756e64bc6" Json="True" KeyString="5c84cd3f-f853-40b3-81cf-dee6a07dc411">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;You can configure what system properties (ID/Guid etc.) will be included in serialized data. This allows you to harden the APIs and not include any data you don't want to. Read about it in the &lt;a href=&quot;https://r.2sxc.org/DsSerializationConfiguration&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This doesn't prevent code or data-sources from accessing the properties, but ensures that it won't be included in the JSON when serialized for WebApi.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This should usually be your last step in a Query, as other processing after this may prevent the configuration from reaching the serializer.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Serialization Configuration" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="&lt;p&gt;Configures how to serialize data coming through this DataSource.&lt;/p&gt;" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
@@ -3367,6 +4400,8 @@
     <Folder Id="5496" RelativePath="adam/DataSource-Types/_1ST7ODUaEGir0XWuz_jpQ/Notes/" />
     <Folder Id="5499" RelativePath="adam/DataSource-Types/_6Dhbgdrw0io7Jsn5AaN-Q/" />
     <Folder Id="5500" RelativePath="adam/DataSource-Types/_6Dhbgdrw0io7Jsn5AaN-Q/Notes/" />
+    <Folder Id="10252" RelativePath="adam/DataSource-Types/as4wRAGmcE6AUwrbhVfjnw/" />
+    <Folder Id="10253" RelativePath="adam/DataSource-Types/as4wRAGmcE6AUwrbhVfjnw/ContentCss/" />
     <Folder Id="5497" RelativePath="adam/DataSource-Types/b8k5snviQ0qsoVmeTfx-Ug/" />
     <Folder Id="5498" RelativePath="adam/DataSource-Types/b8k5snviQ0qsoVmeTfx-Ug/Notes/" />
     <Folder Id="5485" RelativePath="adam/DataSource-Types/czZuX8784EinoePBd0Dkvw/" />
@@ -3375,6 +4410,12 @@
     <Folder Id="5510" RelativePath="adam/DataSource-Types/KvaYKx3OcUa-9oh6ZLx8TA/Notes/" />
     <Folder Id="5493" RelativePath="adam/DataSource-Types/Ljt91inp7Eq7shM6QrU1pw/" />
     <Folder Id="5494" RelativePath="adam/DataSource-Types/Ljt91inp7Eq7shM6QrU1pw/Notes/" />
+    <Folder Id="10249" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/" />
+    <Folder Id="10251" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/Icon/" />
+    <Folder Id="10250" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/Link/" />
+    <Folder Id="10246" RelativePath="adam/DataSource-Types/NX-RfQkMpk-w_-DzjVt5-g/" />
+    <Folder Id="10247" RelativePath="adam/DataSource-Types/NX-RfQkMpk-w_-DzjVt5-g/Icon/" />
+    <Folder Id="10248" RelativePath="adam/DataSource-Types/NX-RfQkMpk-w_-DzjVt5-g/Link/" />
     <Folder Id="5491" RelativePath="adam/DataSource-Types/opwup0dXskiSPAn5D7JTxw/" />
     <Folder Id="5492" RelativePath="adam/DataSource-Types/opwup0dXskiSPAn5D7JTxw/Notes/" />
     <Folder Id="5503" RelativePath="adam/DataSource-Types/OzK4mTQ2RUWk2d8IOkjXGA/" />
@@ -3385,6 +4426,8 @@
     <Folder Id="5505" RelativePath="adam/DataSource-Types/OzK4mTQ2RUWk2d8IOkjXGA/Notes/" />
     <Folder Id="5501" RelativePath="adam/DataSource-Types/VTFflJpxPUOoeFLfWtiFaQ/" />
     <Folder Id="5502" RelativePath="adam/DataSource-Types/VTFflJpxPUOoeFLfWtiFaQ/Notes/" />
+    <Folder Id="10254" RelativePath="adam/DataSource-Types/x3S_CSVkr0urac0KuK5LeQ/" />
+    <Folder Id="10255" RelativePath="adam/DataSource-Types/x3S_CSVkr0urac0KuK5LeQ/ContentCss/" />
     <Folder Id="10242" RelativePath="adam/DataSource-Types/xcptBvzGnkyFrfWEtJoizw/" />
     <Folder Id="10244" RelativePath="adam/DataSource-Types/xcptBvzGnkyFrfWEtJoizw/Icon/" />
     <Folder Id="10243" RelativePath="adam/DataSource-Types/xcptBvzGnkyFrfWEtJoizw/Link/" />
