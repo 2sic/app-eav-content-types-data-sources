@@ -1,11 +1,239 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.12.01" ExportDate="2021-03-29T22:56:12.2453035+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.13.00" ExportDate="2021-04-08T21:51:00.6451333+02:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
     <Dimensions />
   </Header>
   <AttributeSets>
+    <AttributeSet StaticName="7b4fce73-9c29-4517-af14-0a704da5b958" Name="LanguageModelerDSConfiguration" Description="Configuration for the field mapping data source" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa7c5378-05d7-4851-b817-21b04f1e92f5" Json="True" KeyNumber="24654">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Language Modeler Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="Just a title for you to give this configuration a name." Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="00a0c1af-7782-4aa0-8c9c-100f0bdecf91" Json="True" KeyNumber="24654">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3b106041-ff3b-4b5e-af38-62089b073e10" Json="True" KeyNumber="24654" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6716e4c2-3d27-474e-91ad-0605c95109bf" Json="True" KeyNumber="24655">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="just notes for yourself to better understand what this is for" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="98133cff-2e55-431d-bd49-120fe078ef58" Json="True" KeyNumber="24655">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5eb259f1-5061-4ffc-bfca-a641c06ba30b" Json="True" KeyNumber="24655">
+            <Value Key="RowCount" Value="3.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="FieldMap" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0e52c404-8088-4119-add1-f8c147493163" Json="True" KeyNumber="24656">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ChangeTo:ValueFrom&#xA;Name:en-us=NameEn,de-de=NameDe" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="FieldMap" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter one mapping each line. Example: &lt;strong&gt;Target:Source&lt;/strong&gt; will change the attribute name of 'Source' field to 'Target'. For multi-language mappings, use commas to separate languages and = to separate language and source field. Example: &lt;strong&gt;Value:en-us=ValueEn,de-de=ValueDe&lt;/strong&gt; will map ValueEn and ValueDe to a new field Value which contains both values as multi-language entity.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="283857a2-291e-4be1-9734-639f118d6fd3" Json="True" KeyNumber="24656">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aa1664ef-6341-45ab-8b12-7bdf2b657b78" Json="True" KeyNumber="24656">
+            <Value Key="RowCount" Value="10.0" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="d167054a-fe0f-4e98-b1f1-0a9990873e86" Name="RelationshipModelerDsConfiguration" Description="|Config ToSic.Eav.DataSources.TreeBuilder" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4e9058b6-6e7c-4fb7-9f61-a79de33f2e0e" Json="True" KeyNumber="24646">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Tree Relationship Modeler Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="Just a title for you to give this configuration a name." Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="e1ddc413-37b7-45e9-8c45-958200124ed5" Json="True" KeyNumber="24646">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="301c07d5-c52e-4882-a24b-01bee8487780" Json="True" KeyNumber="24646" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b96f16be-0543-4197-9f42-f8cd79ba5ff6" Json="True" KeyNumber="24647">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="just notes for yourself to better understand what this is for" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="92e98745-acca-4f18-8323-cd73c869605a" Json="True" KeyNumber="24647">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1cf4f282-469c-48da-bfad-e729e1da9501" Json="True" KeyNumber="24647">
+            <Value Key="RowCount" Value="3.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="OriginalIDsToMatch" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="52a141a7-ad3e-4076-b3f9-c7895dac67bc" Json="True" KeyNumber="24648">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Original IDs to match" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;We need two things&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;References on the Children to Parents&lt;/li&gt;&#xA;&lt;li&gt;Ways to find the Parent / Folder etc.&lt;/li&gt;&#xA;&lt;/ol&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="39eb3544-08d0-41cd-8cfa-5b3c74fe6af4" Json="True" KeyNumber="24648">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ChildParentAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0783bfbf-c4a1-47e5-a2c1-5382623a3bd9" Json="True" KeyNumber="24649">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ParentGuid" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Field pointing to the Parent or Folder ID" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The property on the Child with points to the parent. It should contain a GUID or a number.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7c305bce-306d-4c99-920d-7e264a1fa377" Json="True" KeyNumber="24649">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="20a55f82-7bea-4035-90b9-aa0b3123b76f" Json="True" KeyNumber="24649" />
+        </Attribute>
+        <Attribute StaticName="ParentIdentifierAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="cfdc65cc-6c86-486e-8cb9-7bad574c2f8b" Json="True" KeyNumber="24650" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="430778f5-a6bf-403b-a858-8be36629a1e2" Json="True" KeyNumber="24650">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="EntityGuid" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Identifier of the Parent / Folder (Parent ID)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter the attribute which should be used to identify entities. The datasource will look for entities in the 'Children' stream with a 'Child Parent Attribute' that matches the 'Parent Identifier Attribute' in the 'Default' stream.&lt;br /&gt;Currently this datasource only supports EntityGuid and EntityId.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7c6d4a24-806c-4c5b-8577-b30b97828e5c" Json="True" KeyNumber="24650">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="22ee83e0-af7a-4f9c-9580-de92642292d6" Json="True" KeyNumber="24650">
+            <Value Key="DropdownValues" Value="EntityGuid&#xA;EntityId" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="NewFieldsContainingRelationships" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="80eac42f-ad79-4272-9bcb-9032673b01a9" Json="True" KeyNumber="24651">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="New fields containing relationships" Type="String" />
+            <Value Key="Notes" Value="Configure the fields which will contain the relationships." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="c228385e-7e6b-4caa-9bbe-f81b545a39bc" Json="True" KeyNumber="24651">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TargetChildrenAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bbc491d2-d5b0-4e7d-bd13-d8473a8e83cb" Json="True" KeyNumber="24652">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Children" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Property of Parent to Access Children" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Property where the child relationships are mapped. If you enter &lt;em&gt;Children&lt;/em&gt; you can access the child entities with &lt;em&gt;item.Children&lt;/em&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1123add6-1f2a-4906-b417-7a84c833521a" Json="True" KeyNumber="24652">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5932119c-9658-4ba4-adf5-e2b5b5431454" Json="True" KeyNumber="24652" />
+        </Attribute>
+        <Attribute StaticName="TargetParentAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="dedac772-47a9-4a78-a590-c3eafa419b59" Json="True" KeyNumber="24653">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Parent" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Property of Child to Access Parent" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Property where the parent relationship is added. If you enter &lt;em&gt;Folder&lt;/em&gt;&amp;nbsp; you can access the parent Entity with &lt;em&gt;item.Folder&lt;/em&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="a4a292b5-97de-40ff-8df5-bc4a079966d2" Json="True" KeyNumber="24653">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f7db7485-7d96-43c5-b707-3987745d3a39" Json="True" KeyNumber="24653" />
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="d98db323-7c33-4f2a-b173-ef91c0875124" Name="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -1156,6 +1384,72 @@
     <AttributeSet StaticName="5ddf5247-534a-48f1-aa3e-4c31878fb33e" Name="Dummy2" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
+    <AttributeSet StaticName="7b4fce73-9c29-4517-af14-0a704da5b958" Name="LanguageModelerDSConfiguration" Description="Configuration for the field mapping data source" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa7c5378-05d7-4851-b817-21b04f1e92f5" Json="True" KeyNumber="24654">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Language Modeler Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="Just a title for you to give this configuration a name." Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="00a0c1af-7782-4aa0-8c9c-100f0bdecf91" Json="True" KeyNumber="24654">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="3b106041-ff3b-4b5e-af38-62089b073e10" Json="True" KeyNumber="24654" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="6716e4c2-3d27-474e-91ad-0605c95109bf" Json="True" KeyNumber="24655">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="just notes for yourself to better understand what this is for" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="98133cff-2e55-431d-bd49-120fe078ef58" Json="True" KeyNumber="24655">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5eb259f1-5061-4ffc-bfca-a641c06ba30b" Json="True" KeyNumber="24655">
+            <Value Key="RowCount" Value="3.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="FieldMap" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0e52c404-8088-4119-add1-f8c147493163" Json="True" KeyNumber="24656">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ChangeTo:ValueFrom&#xA;Name:en-us=NameEn,de-de=NameDe" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="FieldMap" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter one mapping each line. Example: &lt;strong&gt;Target:Source&lt;/strong&gt; will change the attribute name of 'Source' field to 'Target'. For multi-language mappings, use commas to separate languages and = to separate language and source field. Example: &lt;strong&gt;Value:en-us=ValueEn,de-de=ValueDe&lt;/strong&gt; will map ValueEn and ValueDe to a new field Value which contains both values as multi-language entity.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="283857a2-291e-4be1-9734-639f118d6fd3" Json="True" KeyNumber="24656">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aa1664ef-6341-45ab-8b12-7bdf2b657b78" Json="True" KeyNumber="24656">
+            <Value Key="RowCount" Value="10.0" Type="Number" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="78d25ea6-66cc-44a2-b45d-77749cd9420a" Name="QueryRunConfiguration" Description="Run another query" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
@@ -1369,6 +1663,168 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="82f76193-b431-4283-b75c-ec8a4d3a25d0" Json="True" KeyNumber="17857">
             <Value Key="RowCount" Value="10.0" Type="Number" />
           </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="d167054a-fe0f-4e98-b1f1-0a9990873e86" Name="RelationshipModelerDsConfiguration" Description="|Config ToSic.Eav.DataSources.TreeBuilder" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4e9058b6-6e7c-4fb7-9f61-a79de33f2e0e" Json="True" KeyNumber="24646">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Tree Relationship Modeler Configuration" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="Just a title for you to give this configuration a name." Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="e1ddc413-37b7-45e9-8c45-958200124ed5" Json="True" KeyNumber="24646">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="301c07d5-c52e-4882-a24b-01bee8487780" Json="True" KeyNumber="24646" />
+        </Attribute>
+        <Attribute StaticName="Notes" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b96f16be-0543-4197-9f42-f8cd79ba5ff6" Json="True" KeyNumber="24647">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-wysiwyg" Type="String" />
+            <Value Key="Name" Value="Notes" Type="String" />
+            <Value Key="Notes" Value="just notes for yourself to better understand what this is for" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="92e98745-acca-4f18-8323-cd73c869605a" Json="True" KeyNumber="24647">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1cf4f282-469c-48da-bfad-e729e1da9501" Json="True" KeyNumber="24647">
+            <Value Key="RowCount" Value="3.0" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="OriginalIDsToMatch" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="52a141a7-ad3e-4076-b3f9-c7895dac67bc" Json="True" KeyNumber="24648">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="Original IDs to match" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;We need two things&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;References on the Children to Parents&lt;/li&gt;&#xA;&lt;li&gt;Ways to find the Parent / Folder etc.&lt;/li&gt;&#xA;&lt;/ol&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="39eb3544-08d0-41cd-8cfa-5b3c74fe6af4" Json="True" KeyNumber="24648">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ChildParentAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0783bfbf-c4a1-47e5-a2c1-5382623a3bd9" Json="True" KeyNumber="24649">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="ParentGuid" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Field pointing to the Parent or Folder ID" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;The property on the Child with points to the parent. It should contain a GUID or a number.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7c305bce-306d-4c99-920d-7e264a1fa377" Json="True" KeyNumber="24649">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="20a55f82-7bea-4035-90b9-aa0b3123b76f" Json="True" KeyNumber="24649" />
+        </Attribute>
+        <Attribute StaticName="ParentIdentifierAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="cfdc65cc-6c86-486e-8cb9-7bad574c2f8b" Json="True" KeyNumber="24650" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="430778f5-a6bf-403b-a858-8be36629a1e2" Json="True" KeyNumber="24650">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="EntityGuid" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Identifier of the Parent / Folder (Parent ID)" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Enter the attribute which should be used to identify entities. The datasource will look for entities in the 'Children' stream with a 'Child Parent Attribute' that matches the 'Parent Identifier Attribute' in the 'Default' stream.&lt;br /&gt;Currently this datasource only supports EntityGuid and EntityId.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="7c6d4a24-806c-4c5b-8577-b30b97828e5c" Json="True" KeyNumber="24650">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="22ee83e0-af7a-4f9c-9580-de92642292d6" Json="True" KeyNumber="24650">
+            <Value Key="DropdownValues" Value="EntityGuid&#xA;EntityId" Type="String" />
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="NewFieldsContainingRelationships" Type="Empty" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="80eac42f-ad79-4272-9bcb-9032673b01a9" Json="True" KeyNumber="24651">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="New fields containing relationships" Type="String" />
+            <Value Key="Notes" Value="Configure the fields which will contain the relationships." Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="c228385e-7e6b-4caa-9bbe-f81b545a39bc" Json="True" KeyNumber="24651">
+            <Value Key="DefaultCollapsed" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TargetChildrenAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bbc491d2-d5b0-4e7d-bd13-d8473a8e83cb" Json="True" KeyNumber="24652">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Children" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Property of Parent to Access Children" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Property where the child relationships are mapped. If you enter &lt;em&gt;Children&lt;/em&gt; you can access the child entities with &lt;em&gt;item.Children&lt;/em&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1123add6-1f2a-4906-b417-7a84c833521a" Json="True" KeyNumber="24652">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5932119c-9658-4ba4-adf5-e2b5b5431454" Json="True" KeyNumber="24652" />
+        </Attribute>
+        <Attribute StaticName="TargetParentAttribute" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="dedac772-47a9-4a78-a590-c3eafa419b59" Json="True" KeyNumber="24653">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Parent" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Property of Child to Access Parent" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Property where the parent relationship is added. If you enter &lt;em&gt;Folder&lt;/em&gt;&amp;nbsp; you can access the parent Entity with &lt;em&gt;item.Folder&lt;/em&gt;.&lt;/p&gt;" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="a4a292b5-97de-40ff-8df5-bc4a079966d2" Json="True" KeyNumber="24653">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f7db7485-7d96-43c5-b707-3987745d3a39" Json="True" KeyNumber="24653" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -4562,6 +5018,32 @@
       <Value Key="ListInstructions" Value="" Type="String" />
       <Value Key="Notes" Value="&lt;p&gt;Configures how to serialize data coming through this DataSource.&lt;/p&gt;" Type="String" />
     </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c16d7030-d953-425a-b33a-181d2afc46c4" Json="True" KeyString="d167054a-fe0f-4e98-b1f1-0a9990873e86">
+      <Value Key="Description" Value="Convert flat data into 2sxc relationships" Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;Use this to connect records which are tabular but would represent a hierarchy / tree-structure. Data passing through this data source will then have Children / and or Parent-relationships.&amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;Note that the purpose of this is really to build a tree structure, so it assumes that each child can only have one parent / folder.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Tree Relationship Modeler" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1b87d76b-d158-4eca-95ba-4b5f0abe5fc6" Json="True" KeyString="7b4fce73-9c29-4517-af14-0a704da5b958">
+      <Value Key="Description" Value="Change tabular language data into Entities." Type="String" />
+      <Value Key="EditInstructions" Value="&lt;p&gt;This helps you turn tabular language data into multi-language properties the way 2sxc uses it.&amp;nbsp;&lt;/p&gt;" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Label" Value="Language Modeler" Type="String" />
+      <Value Key="Link" Value="" Type="Hyperlink" />
+      <Value Key="ListInstructions" Value="" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="d167054a-fe0f-4e98-b1f1-0a9990873e86" AttributeSetName="RelationshipModelerDsConfiguration" EntityGUID="bf5f3c74-4fff-4ede-8cf4-74757396367b">
+      <Value Key="ChildParentAttribute" Value="ParentGuid" Type="String" />
+      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="ParentIdentifierAttribute" Value="EntityGuid" Type="String" />
+      <Value Key="TargetChildrenAttribute" Value="Children" Type="String" />
+      <Value Key="TargetParentAttribute" Value="Parent" Type="String" />
+      <Value Key="Title" Value="Tree Relationship Modeler Configuration" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
@@ -4572,6 +5054,12 @@
     <Folder Id="5500" RelativePath="adam/DataSource-Types/_6Dhbgdrw0io7Jsn5AaN-Q/Notes/" />
     <Folder Id="10261" RelativePath="adam/DataSource-Types/2BIWopnLoE27RFNl79tTKQ/" />
     <Folder Id="10262" RelativePath="adam/DataSource-Types/2BIWopnLoE27RFNl79tTKQ/ContentCss/" />
+    <Folder Id="10280" RelativePath="adam/DataSource-Types/7pRyOGE09E2Qm8ysJPjiLQ/" />
+    <Folder Id="10282" RelativePath="adam/DataSource-Types/7pRyOGE09E2Qm8ysJPjiLQ/Icon/" />
+    <Folder Id="10281" RelativePath="adam/DataSource-Types/7pRyOGE09E2Qm8ysJPjiLQ/Link/" />
+    <Folder Id="10287" RelativePath="adam/DataSource-Types/a9eHG1jRyk6VuktfCr5fxg/" />
+    <Folder Id="10289" RelativePath="adam/DataSource-Types/a9eHG1jRyk6VuktfCr5fxg/Icon/" />
+    <Folder Id="10288" RelativePath="adam/DataSource-Types/a9eHG1jRyk6VuktfCr5fxg/Link/" />
     <Folder Id="10252" RelativePath="adam/DataSource-Types/as4wRAGmcE6AUwrbhVfjnw/" />
     <Folder Id="10253" RelativePath="adam/DataSource-Types/as4wRAGmcE6AUwrbhVfjnw/ContentCss/" />
     <Folder Id="5497" RelativePath="adam/DataSource-Types/b8k5snviQ0qsoVmeTfx-Ug/" />
@@ -4582,6 +5070,9 @@
     <Folder Id="5510" RelativePath="adam/DataSource-Types/KvaYKx3OcUa-9oh6ZLx8TA/Notes/" />
     <Folder Id="5493" RelativePath="adam/DataSource-Types/Ljt91inp7Eq7shM6QrU1pw/" />
     <Folder Id="5494" RelativePath="adam/DataSource-Types/Ljt91inp7Eq7shM6QrU1pw/Notes/" />
+    <Folder Id="10283" RelativePath="adam/DataSource-Types/MHBtwVPZWkKzOhgdKvxGxA/" />
+    <Folder Id="10285" RelativePath="adam/DataSource-Types/MHBtwVPZWkKzOhgdKvxGxA/Icon/" />
+    <Folder Id="10286" RelativePath="adam/DataSource-Types/MHBtwVPZWkKzOhgdKvxGxA/Link/" />
     <Folder Id="10249" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/" />
     <Folder Id="10251" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/Icon/" />
     <Folder Id="10250" RelativePath="adam/DataSource-Types/NafN5px2o0acmqvnVuZLxg/Link/" />
