@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-10-07T09:43:51.9397678+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-10-07T09:48:53.4814284+02:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -4705,7 +4705,7 @@
             <Value Key="Name" Value="InstanceId / ModuleId" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:ModuleId]&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:Id]&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -4794,7 +4794,7 @@
             <Value Key="Name" Value="InstanceId / ModuleId" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:ModuleId]&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;The moduleID or a token giving you the module. By default it's [Module:Id]&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -4889,13 +4889,30 @@
       <Value Key="Notes" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="731fdd95-4e2a-4317-bf90-dd48d7e7d1f6" Json="True" KeyString="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02">
-      <Value Key="Description" Value="For DNN Module DataSource" Type="String" />
-      <Value Key="EditInstructions" Value="&lt;p&gt;This will return the items of a Module Instance, in two streams &lt;em&gt;Content&lt;/em&gt; and &lt;em&gt;ListContent&lt;/em&gt;.&amp;nbsp;By default, it takes the module-id from the current context, but you can specify a specific module if you need it.&amp;nbsp;Read more in the &lt;a href=&quot;https://docs.2sxc.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt; about the &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.DataSources.CmsBlock.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsBlock DataSource&lt;/a&gt;.&lt;/p&gt;" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Label" Value="DNN CMS Block (Module)" Type="String" />
-      <Value Key="Link" Value="" Type="Hyperlink" />
-      <Value Key="ListInstructions" Value="" Type="String" />
-      <Value Key="Notes" Value="" Type="String" />
+      <Value Key="Description" Value="Module DataSource with Data of a specific module" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;This will return the items of a Module Instance, in two streams &lt;em&gt;Content&lt;/em&gt; and &lt;em&gt;Header&lt;/em&gt;.&amp;nbsp;By default, it takes the module-id from the current context, but you can specify a specific module if you need it.&amp;nbsp;Read more in the &lt;a href=&quot;https://docs.2sxc.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt; about the &lt;a href=&quot;https://docs.2sxc.org/api/dot-net/ToSic.Sxc.DataSources.CmsBlock.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CmsBlock DataSource&lt;/a&gt;.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="CMS Block (Module)" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="91efe9e2-82e9-4c62-9a29-a6c206c88cb9" Json="True" KeyString="fabc849e-b426-42ea-8e1c-c04e69facd9b">
       <Value Key="Description" Value="config of Apps" Type="String" />
