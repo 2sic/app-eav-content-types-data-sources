@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.00" ExportDate="2021-12-13T12:22:02.9272218+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.00" ExportDate="2021-12-14T19:22:10.3396461+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -5192,16 +5192,6 @@
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="ToSic.Eav.DataSources.App" Description="used to configure an App DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="ZoneSwitch" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="7eb084bc-32da-4f59-97de-8b4602442c69" KeyNumber="10813">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0d595197-1a7b-4ad8-b37a-c5963e1c8c5f" Json="True" KeyNumber="10813">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -5297,16 +5287,6 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="b14afec3-3f23-4374-b87a-80183286b45f" KeyNumber="10812">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="75bd688c-08e5-405e-8dc6-d62d3ef8bd92" Json="True" KeyNumber="10812">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -5357,16 +5337,6 @@
     <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="ToSic.Eav.DataSources.App" Description="used to configure an App DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="ZoneSwitch" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="7eb084bc-32da-4f59-97de-8b4602442c69" KeyNumber="10813">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0d595197-1a7b-4ad8-b37a-c5963e1c8c5f" Json="True" KeyNumber="10813">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -5462,16 +5432,6 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="b14afec3-3f23-4374-b87a-80183286b45f" KeyNumber="10812">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="75bd688c-08e5-405e-8dc6-d62d3ef8bd92" Json="True" KeyNumber="10812">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -5743,7 +5703,6 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="AttributeNames" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="2fb0128a-5ebe-447c-ac5e-57aed4650b3c" KeyNumber="10814" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" Json="True" KeyNumber="10814">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -5920,7 +5879,6 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="AttributeNames" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="2fb0128a-5ebe-447c-ac5e-57aed4650b3c" KeyNumber="10814" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="27decc65-4c58-455f-8963-7db3c102aa08" Json="True" KeyNumber="10814">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -7094,7 +7052,6 @@
             <Value Key="Notes" Value="Comma separated list of Entity IDs, like 503,522,5066,32" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="3d3a9bd6-f0b7-41d2-a8f0-7dd8306f65dc" KeyNumber="10824" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -7107,7 +7064,6 @@
             <Value Key="Notes" Value="Comma separated list of Entity IDs, like 503,522,5066,32" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="3d3a9bd6-f0b7-41d2-a8f0-7dd8306f65dc" KeyNumber="10824" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -7125,7 +7081,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="1b37f2ab-6a48-48d2-a1b9-ad6de5d31a5b" KeyNumber="10825" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="11cd2452-30c6-4aff-871b-a9e7bd542ec5" Json="True" KeyNumber="10825">
             <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
             <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
@@ -7153,7 +7108,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="1b37f2ab-6a48-48d2-a1b9-ad6de5d31a5b" KeyNumber="10825" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="11cd2452-30c6-4aff-871b-a9e7bd542ec5" Json="True" KeyNumber="10825">
             <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
             <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
@@ -7509,7 +7463,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="f59a6a53-d3ea-4668-8a07-654106dc72c1" KeyNumber="10830" />
         </Attribute>
         <Attribute StaticName="Filter" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b2cf2638-4914-4987-8526-d94e5c0563d6" Json="True" KeyNumber="10831">
@@ -7523,7 +7476,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="a66db65a-fac1-415c-a370-a1597ea58ca0" KeyNumber="10831" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="60832427-0db9-45c3-8566-60ba0ed82b6d" Json="True" KeyNumber="10831">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -7660,7 +7612,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="f59a6a53-d3ea-4668-8a07-654106dc72c1" KeyNumber="10830" />
         </Attribute>
         <Attribute StaticName="Filter" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b2cf2638-4914-4987-8526-d94e5c0563d6" Json="True" KeyNumber="10831">
@@ -7674,7 +7625,6 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="a66db65a-fac1-415c-a370-a1597ea58ca0" KeyNumber="10831" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="60832427-0db9-45c3-8566-60ba0ed82b6d" Json="True" KeyNumber="10831">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
@@ -8111,50 +8061,67 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="d943cf51-22d1-4566-817d-13796d52ce01" KeyNumber="10832">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="db64e023-a504-449d-b519-4fd74f5a7bcc" Json="True" KeyNumber="10832">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Operator" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b6f685cc-4903-4c89-8377-3be3748623dd" Json="True" KeyNumber="10834">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="==" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="Name" Value="Operator" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="4e1fdee3-f870-41ef-acb4-aab09905eed0" KeyNumber="10834">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="417cdfe0-8f36-4a5f-96fe-89a6546e7673" Json="True" KeyNumber="10834">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b84854fe-d4da-4769-acf9-3732ce51d99b" Json="True" KeyNumber="10834">
-            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01':between&#xA;!between for dates - use '2016-01-01 and 2017-01-01':!between&#xA;get Operator from url:[QueryString:Operator]" Type="String" />
-            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b6f685cc-4903-4c89-8377-3be3748623dd" Json="True" KeyNumber="10834">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="==" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Operator" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="0182a293-b3c9-4ef2-a9e7-17e9a2c745b8" Json="True" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="897ac000-27e3-4eef-8c85-ca8fa8f6aca9" Json="True" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01':between&#xA;!between for dates - use '2016-01-01 and 2017-01-01':!between&#xA;get Operator from url:[QueryString:Operator]" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="Value" Type="String" IsTitle="false">
@@ -8168,16 +8135,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="69ab602d-889a-47a4-b9bf-71955ff335fa" KeyNumber="10833">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f7b3632a-af0d-427f-a786-94dcbcd59d36" Json="True" KeyNumber="10833">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -8196,16 +8153,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="49fc6c3a-c5f0-4c86-be57-5504d83485c4" KeyNumber="10835">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f92ce3b1-daf5-43d7-aa4d-419cd758c73f" Json="True" KeyNumber="10835">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -8254,50 +8201,67 @@
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="d943cf51-22d1-4566-817d-13796d52ce01" KeyNumber="10832">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="db64e023-a504-449d-b519-4fd74f5a7bcc" Json="True" KeyNumber="10832">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Operator" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b6f685cc-4903-4c89-8377-3be3748623dd" Json="True" KeyNumber="10834">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="==" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="Name" Value="Operator" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="4e1fdee3-f870-41ef-acb4-aab09905eed0" KeyNumber="10834">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
-          </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="417cdfe0-8f36-4a5f-96fe-89a6546e7673" Json="True" KeyNumber="10834">
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b84854fe-d4da-4769-acf9-3732ce51d99b" Json="True" KeyNumber="10834">
-            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01':between&#xA;!between for dates - use '2016-01-01 and 2017-01-01':!between&#xA;get Operator from url:[QueryString:Operator]" Type="String" />
-            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b6f685cc-4903-4c89-8377-3be3748623dd" Json="True" KeyNumber="10834">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="==" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Operator" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;This determines how things will be compared, so if it's a &quot;field = value&quot; or &quot;field contains value&quot; etc. There are&amp;nbsp;many operators and which one you use depends a bit on what data-type you are comparing. For example, a number can be &quot;&lt;em&gt;between&lt;/em&gt; 17 and 25&quot; or a text can &quot;&lt;em&gt;!contain&lt;/em&gt; daniel&quot;. Read more about the possible operators in &lt;a href=&quot;http://2sxc.org/help?tag=ToSic.Eav.DataSources.ValueFilter&quot; target=&quot;_blank&quot;&gt;help&lt;/a&gt;.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="0182a293-b3c9-4ef2-a9e7-17e9a2c745b8" Json="True" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="897ac000-27e3-4eef-8c85-ca8fa8f6aca9" Json="True" KeyNumber="10834">
+            <Value Key="DropdownValues" Value="== equals (case insensitive, numbers, etc.):==&#xA;=== case-sensitive, exact equals:===&#xA;!= not equal, case insensitive:!=&#xA;begins means it begins with this:begins&#xA;contains means it contains this:contains&#xA;!contains doesn't contain:!contains&#xA;&gt; for numbers:&gt;&#xA;&lt; for numbers:&lt;&#xA;&gt;= for numbers:&gt;=&#xA;&lt;= for numbers:&lt;=&#xA;between for numbers - in filter use '7 and 10':between&#xA;!between for numbers - use '7 and 10:!between&#xA;between for dates - use '2016-01-01 and 2017-01-01':between&#xA;!between for dates - use '2016-01-01 and 2017-01-01':!between&#xA;get Operator from url:[QueryString:Operator]" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="Value" Type="String" IsTitle="false">
@@ -8311,16 +8275,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="69ab602d-889a-47a4-b9bf-71955ff335fa" KeyNumber="10833">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f7b3632a-af0d-427f-a786-94dcbcd59d36" Json="True" KeyNumber="10833">
             <Value Key="RowCount" Value="1" Type="Number" />
@@ -8339,16 +8293,6 @@
             <Value Key="Required" Value="False" Type="Boolean" />
             <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="xx@String" AttributeSetName="xx@String" EntityGUID="49fc6c3a-c5f0-4c86-be57-5504d83485c4" KeyNumber="10835">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-            <Value Key="ValidationAutomatic" Value="" Type="String" />
-            <Value Key="ValidationRegEx" Value="" Type="String" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="WysiwygHeight" Value="" Type="Number" />
-            <Value Key="WysiwygWidth" Value="" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f92ce3b1-daf5-43d7-aa4d-419cd758c73f" Json="True" KeyNumber="10835">
             <Value Key="RowCount" Value="1" Type="Number" />
