@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.03.00" ExportDate="2022-03-07T22:08:05.7736017+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.10.00" ExportDate="2022-10-17T20:42:07.8707683+02:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -183,7 +183,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="10" Type="Number">
+            <Value Key="RowCount" Value="10.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -1730,7 +1730,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5eb259f1-5061-4ffc-bfca-a641c06ba30b" Json="True" KeyNumber="24655">
-            <Value Key="RowCount" Value="3" Type="Number" />
+            <Value Key="RowCount" Value="3.0" Type="Number" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="fd6e5b68-5d64-4461-8f6e-2a69d13a8026" Json="True" KeyNumber="24655">
             <Value Key="ButtonAdvanced" Value="" Type="String">
@@ -1769,7 +1769,7 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="aa1664ef-6341-45ab-8b12-7bdf2b657b78" Json="True" KeyNumber="24656">
-            <Value Key="RowCount" Value="10" Type="Number" />
+            <Value Key="RowCount" Value="10.0" Type="Number" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -1934,7 +1934,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -2108,7 +2108,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -2646,7 +2646,7 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="82f76193-b431-4283-b75c-ec8a4d3a25d0" Json="True" KeyNumber="17857">
-            <Value Key="RowCount" Value="10" Type="Number" />
+            <Value Key="RowCount" Value="10.0" Type="Number" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -2674,9 +2674,6 @@
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="301c07d5-c52e-4882-a24b-01bee8487780" Json="True" KeyNumber="24646" />
         </Attribute>
         <Attribute StaticName="Notes" Type="String" IsTitle="false">
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1cf4f282-469c-48da-bfad-e729e1da9501" Json="True" KeyNumber="24647">
-            <Value Key="RowCount" Value="3" Type="Number" />
-          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b96f16be-0543-4197-9f42-f8cd79ba5ff6" Json="True" KeyNumber="24647">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -2719,6 +2716,9 @@
             <Value Key="InputType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="1cf4f282-469c-48da-bfad-e729e1da9501" Json="True" KeyNumber="24647">
+            <Value Key="RowCount" Value="3.0" Type="Number" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-wysiwyg" AttributeSetName="@string-wysiwyg" EntityGUID="e6b5d4ea-07dc-421c-a8b0-d3d0862b6381" Json="True" KeyNumber="24647">
             <Value Key="ButtonAdvanced" Value="" Type="String">
@@ -2858,6 +2858,164 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d" Name="RolesDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="FilterRoleIds" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02e9725f-7c53-40bd-a2b8-6141b1520be3" Json="True" KeyNumber="30435">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown-query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Filter (only show these Roles)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="ae599e62-0c3c-48f6-bf68-70200a0c7c29" Json="True" KeyNumber="30435">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="f7563905-dd8c-4d21-8ae4-26979fb5c78d" Json="True" KeyNumber="30435">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Label" Value="Name" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Query" Value="Eav.Queries.Global.Roles" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="," Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="StreamName" Value="Default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="UrlParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Value" Value="Id" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ExcludeRoleIds" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fb39ec12-5f5d-4f26-a734-44398f640658" Json="True" KeyNumber="30436">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown-query" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Exclude (remove from result)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="e56e4c26-b81f-4d12-a93e-0849d8bf8f64" Json="True" KeyNumber="30436">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown-query" AttributeSetName="@string-dropdown-query" EntityGUID="fc9cd5bc-accb-45c2-8324-0089a1766dc0" Json="True" KeyNumber="30436">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Label" Value="Name" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Query" Value="Eav.Queries.Global.Roles" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Separator" Value="," Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="StreamName" Value="Default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="UrlParameters" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Value" Value="Id" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="67b19864-df6d-400b-9f37-f41f1dd69c4a" Name="StreamPick" Description="Configure a Stream-Pick Data Source" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="StreamName" Type="String" IsTitle="true">
@@ -2903,7 +3061,7 @@
             <Value Key="InputType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -3282,7 +3440,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="10" Type="Number">
+            <Value Key="RowCount" Value="10.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4076,13 +4234,10 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="f3ffdd61-6a10-4721-9d68-aea5e4fe2987" Json="True" KeyNumber="10838">
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="RowCount" Value="1.0" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Notes" Type="String" IsTitle="false">
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="57bbf159-cda6-499c-8884-be64b470e050" Json="True" KeyNumber="10839">
-            <Value Key="RowCount" Value="3" Type="Number" />
-          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="803afd9b-f945-4ede-9cba-93dbe6a9c9e1" Json="True" KeyNumber="10839">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -4117,6 +4272,9 @@
             <Value Key="VisibleInEditUI" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="57bbf159-cda6-499c-8884-be64b470e050" Json="True" KeyNumber="10839">
+            <Value Key="RowCount" Value="3" Type="Number" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c72fea0d-b9cf-44a7-8c9b-1622170ba811" Json="True" KeyNumber="10839">
             <Value Key="DropdownValues" Value="" Type="String">
@@ -4326,7 +4484,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="3" Type="Number">
+            <Value Key="RowCount" Value="3.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4628,7 +4786,7 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="21e4dfb1-18ff-4dc4-84e0-4fb0e243b84a" Json="True" KeyNumber="12526">
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="RowCount" Value="1.0" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Directions" Type="String" IsTitle="false">
@@ -4727,7 +4885,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4775,7 +4933,7 @@
             <Value Key="InputType" Value="default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="10" Type="Number">
+            <Value Key="RowCount" Value="10.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4783,7 +4941,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="10" Type="Number">
+            <Value Key="RowCount" Value="10.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4807,10 +4965,10 @@
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="1fd75026-ee7b-41f5-a2ab-e299b302de47" Json="True" KeyNumber="12530">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="RowCount" Value="1.0" Type="Number" />
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="66c62507-0a7b-4860-8e56-76a439eca058" Json="True" KeyNumber="12530">
-            <Value Key="RowCount" Value="1" Type="Number" />
+            <Value Key="RowCount" Value="1.0" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="Properties" Type="String" IsTitle="false">
@@ -4856,7 +5014,7 @@
             <Value Key="InputType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4864,7 +5022,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4912,7 +5070,7 @@
             <Value Key="InputType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4920,7 +5078,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4968,7 +5126,7 @@
             <Value Key="InputType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -4976,7 +5134,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -5041,7 +5199,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="3" Type="Number">
+            <Value Key="RowCount" Value="3.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -5094,7 +5252,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
@@ -6010,6 +6168,40 @@
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Title" Value="Disable Translation" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d" AttributeSetName="RolesDataSourceConfig" EntityGUID="228f81b3-743c-4896-b759-d43764a6ca61">
+      <Value Key="ExcludeRoleIds" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="FilterRoleIds" Value="353,354" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="c557999e-cd4b-4f9c-b60d-661a69083293" Json="True" KeyString="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d">
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure which roles will be returned by this data source. See &lt;a href=&quot;https://r.2sxc.org/ds-roles&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Roles" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
