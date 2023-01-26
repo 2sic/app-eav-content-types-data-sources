@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.12.00" ExportDate="2022-11-09T14:16:03.2723265+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="15.01.00" ExportDate="2023-01-27T00:33:14.6160638+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -9,7 +9,7 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="d98db323-7c33-4f2a-b173-ef91c0875124" Name="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="d98db323-7c33-4f2a-b173-ef91c0875124" Name="|Config ToSic.SexyContent.DataSources.DnnFormAndList" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="eb7cacd2-6da7-42cf-a38c-3c1e0b6f4457" Json="True" KeyNumber="10798">
@@ -65,7 +65,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Name="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Description="Configuration for the Form and List Data Source" Scope="System" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Name="|Config ToSic.SexyContent.Environment.Dnn7.DataSources.DnnFormAndList" Scope="System" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f9047247-5d8b-4c18-85e7-80dc81041c99" Json="True" KeyNumber="10802">
@@ -109,13 +109,13 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="c5918cb8-d35a-48c7-9380-a437edde66d2" Name="AttributeRename" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="c5918cb8-d35a-48c7-9380-a437edde66d2" Name="AttributeRename" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="52bc209f-9df6-46ee-a9c8-c5f897e99d3a" Json="True" KeyNumber="19825">
@@ -304,7 +304,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="832cd470-49f2-4909-a08a-77644457713e" Name="ChildrenDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="832cd470-49f2-4909-a08a-77644457713e" Name="ChildrenDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="933ca063-522c-47e0-baa4-c50e016367f5" Json="True" KeyNumber="26000">
@@ -629,7 +629,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="5c84cd3f-f853-40b3-81cf-dee6a07dc411" Name="DsSerializationConfiguration" Description="Used to configure a Serialization DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="5c84cd3f-f853-40b3-81cf-dee6a07dc411" Name="DsSerializationConfiguration" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a94de776-35ed-47f1-af0f-25cffa11ac83" Json="True" KeyNumber="24600">
@@ -733,25 +733,58 @@
         </Attribute>
         <Attribute StaticName="IncludeId" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9251a6fb-c953-445a-80a0-d842efc6bf31" Json="True" KeyNumber="24590">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-dropdown" Type="String" />
-            <Value Key="Name" Value="Id" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="False" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Id" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="9afd84d4-c1ad-4a7e-9996-a91567d9a337" Json="True" KeyNumber="24590">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="81d352a9-528b-42b4-93da-046d7c799fdf" Json="True" KeyNumber="24590">
-            <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
-            <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+            <Value Key="DropdownValues" Value=":System Default (include)&#xA;false:Don't include&#xA;true:Include" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="IncludeGuid" Type="String" IsTitle="false">
@@ -844,6 +877,62 @@
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="43bc2390-67d7-45a0-b82c-61012ae70e75" Json="True" KeyNumber="24594">
             <Value Key="DropdownValues" Value="System Default (include):&#xA;Don't include:false&#xA;Include:true" Type="String" />
             <Value Key="EnableTextEntry" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeAppId" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ffb5d0e0-e734-45bd-99b1-c796ae9196cf" Json="True" KeyNumber="32240">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Include AppId" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Normally not needed, but in rare cases where we load from multiple Apps it helps the UI to not offer edit-buttons.&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b388a2df-53c6-45b4-839b-44591a1d43eb" Json="True" KeyNumber="32240">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="f1aa2183-af92-4cea-8bac-7b378a09c076" Json="True" KeyNumber="32240">
+            <Value Key="DropdownValues" Value=":System Default (don't include)&#xA;false:Don't include&#xA;true:Include" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
           </Entity>
         </Attribute>
         <Attribute StaticName="GroupRelationshipProperties" Type="Empty" IsTitle="false">
@@ -1649,7 +1738,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="1fffb7ab-faca-4a20-91f1-5077bc5771fa" Name="Dummy1" Description="" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="1fffb7ab-faca-4a20-91f1-5077bc5771fa" Name="Dummy1" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="aoeu" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8d89f21-6c74-4a6e-8d79-5a6a3070f7b2" Json="True" KeyNumber="11347">
@@ -1660,10 +1749,10 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="5ddf5247-534a-48f1-aa3e-4c31878fb33e" Name="Dummy2" Description="" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="5ddf5247-534a-48f1-aa3e-4c31878fb33e" Name="Dummy2" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="7b4fce73-9c29-4517-af14-0a704da5b958" Name="LanguageModelerDSConfiguration" Description="Configuration for the field mapping data source" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="7b4fce73-9c29-4517-af14-0a704da5b958" Name="LanguageModelerDSConfiguration" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa7c5378-05d7-4851-b817-21b04f1e92f5" Json="True" KeyNumber="24654">
@@ -1774,7 +1863,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="e484d9ec-a419-4909-8000-5173d351bbc1" Name="MergeStreamDataSourceConfiguration" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="e484d9ec-a419-4909-8000-5173d351bbc1" Name="MergeStreamDataSourceConfiguration" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5c995b99-1d28-43a2-8ba9-7a0ff5cd6438" Json="True" KeyNumber="26010">
@@ -1884,7 +1973,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="d7858b36-1ef1-4c3d-b15c-c567b0d7bdd4" Name="MetadataDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="d7858b36-1ef1-4c3d-b15c-c567b0d7bdd4" Name="MetadataDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e44177d1-7756-4a74-aab3-d1a389985e95" Json="True" KeyNumber="26012">
@@ -2058,7 +2147,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="7dcd26eb-a70c-4a4f-bb3b-5bd5da304232" Name="MetadataTargetDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="7dcd26eb-a70c-4a4f-bb3b-5bd5da304232" Name="MetadataTargetDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0d133a5b-b17a-4730-8fcd-981131452a73" Json="True" KeyNumber="26015">
@@ -2240,7 +2329,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="a72cb2f4-52bb-41e6-9281-10e69aeb0310" Name="ParentsDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="a72cb2f4-52bb-41e6-9281-10e69aeb0310" Name="ParentsDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d62ab183-9d7a-43b4-9ca5-dd33b13f6b37" Json="True" KeyNumber="26005">
@@ -2504,7 +2593,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="78d25ea6-66cc-44a2-b45d-77749cd9420a" Name="QueryRunConfiguration" Description="Run another query" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="78d25ea6-66cc-44a2-b45d-77749cd9420a" Name="QueryRunConfiguration" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a72e9ca2-5747-48b2-923c-09f90fb253c7" Json="True" KeyNumber="17854">
@@ -2651,7 +2740,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="d167054a-fe0f-4e98-b1f1-0a9990873e86" Name="RelationshipModelerDsConfiguration" Description="|Config ToSic.Eav.DataSources.TreeBuilder" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="d167054a-fe0f-4e98-b1f1-0a9990873e86" Name="RelationshipModelerDsConfiguration" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4e9058b6-6e7c-4fb7-9f61-a79de33f2e0e" Json="True" KeyNumber="24646">
@@ -2858,7 +2947,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d" Name="RolesDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d" Name="RolesDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="RoleIds" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02e9725f-7c53-40bd-a2b8-6141b1520be3" Json="True" KeyNumber="30435">
@@ -3016,7 +3105,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="67b19864-df6d-400b-9f37-f41f1dd69c4a" Name="StreamPick" Description="Configure a Stream-Pick Data Source" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="67b19864-df6d-400b-9f37-f41f1dd69c4a" Name="StreamPick" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="StreamName" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="12e1ef4e-9ef9-47ba-8504-6c444a27fc42" Json="True" KeyNumber="18819">
@@ -3038,7 +3127,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="ToSic.Eav.DataSources.App" Description="used to configure an App DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.App" Name="ToSic.Eav.DataSources.App" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="ZoneSwitch" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="0d595197-1a7b-4ad8-b37a-c5963e1c8c5f" Json="True" KeyNumber="10813">
@@ -3183,7 +3272,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="fabc849e-b426-42ea-8e1c-c04e69facd9b" Name="ToSic.Eav.DataSources.Apps" Description="config of Apps" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="fabc849e-b426-42ea-8e1c-c04e69facd9b" Name="ToSic.Eav.DataSources.Apps" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bec36365-c1bc-4d7c-bf70-f62cdec771fe" Json="True" KeyNumber="11298">
@@ -3234,7 +3323,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.AttributeFilter" Name="ToSic.Eav.DataSources.AttributeFilter" Description="used to configure an AttributeFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.AttributeFilter" Name="ToSic.Eav.DataSources.AttributeFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f6a58a4d-947f-4e05-b8ae-c6b2760c056e" Json="True" KeyNumber="24603">
@@ -3447,7 +3536,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="5461d34d-7dc6-4d38-9250-a0729cc8ead3" Name="ToSic.Eav.DataSources.Attributes" Description="config of Attributes" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="5461d34d-7dc6-4d38-9250-a0729cc8ead3" Name="ToSic.Eav.DataSources.Attributes" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="69bae27c-019d-4375-bd9a-8ab02615a17f" Json="True" KeyNumber="11301">
@@ -3490,7 +3579,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Caches.CacheAllStreams" Name="ToSic.Eav.DataSources.Caches.CacheAllStreams" Description="Configuration for CacheAllStreams data source" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Caches.CacheAllStreams" Name="ToSic.Eav.DataSources.Caches.CacheAllStreams" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5552490c-89b9-466f-8960-85fda043ace6" Json="True" KeyNumber="10815">
@@ -3616,7 +3705,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="37b25044-29bb-4c78-85e4-7b89f0abaa2c" Name="ToSic.Eav.DataSources.ContentTypes" Description="config of content-types" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="37b25044-29bb-4c78-85e4-7b89f0abaa2c" Name="ToSic.Eav.DataSources.ContentTypes" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0e30efed-8008-417a-b547-3cf9113f08db" Json="True" KeyNumber="11338">
@@ -3679,7 +3768,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.CsvDataSource" Name="ToSic.Eav.DataSources.CsvDataSource" Description="Configure the CSV data source." Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.CsvDataSource" Name="ToSic.Eav.DataSources.CsvDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ffee6fe6-bd48-4da4-87fb-8645af408cbb" Json="True" KeyNumber="10818">
@@ -4039,7 +4128,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityIdFilter" Name="ToSic.Eav.DataSources.EntityIdFilter" Description="used to configure an EntityIdFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityIdFilter" Name="ToSic.Eav.DataSources.EntityIdFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="EntityIds" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f5417b6e-d4e9-4438-9d41-7b2a05e9e9f7" Json="True" KeyNumber="10824">
@@ -4051,7 +4140,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" Name="ToSic.Eav.DataSources.EntityTypeFilter" Description="used to configure an EntityTypeFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" Name="ToSic.Eav.DataSources.EntityTypeFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="TypeName" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="21ab2b50-e283-4fe1-bea1-524e4466e4fb" Json="True" KeyNumber="10825">
@@ -4078,7 +4167,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.OwnerFilter" Name="ToSic.Eav.DataSources.OwnerFilter" Description="to configure the owner-filter" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.OwnerFilter" Name="ToSic.Eav.DataSources.OwnerFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="IdentityCode" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a87a030b-a735-4462-ae6c-1b9050ea392e" Json="True" KeyNumber="10826">
@@ -4098,7 +4187,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Paging" Name="ToSic.Eav.DataSources.Paging" Description="Configuration of Paging DataSources" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.Paging" Name="ToSic.Eav.DataSources.Paging" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="41bbb177-0bff-4421-8034-556c082199cd" Json="True" KeyNumber="10827">
@@ -4145,7 +4234,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="4638668f-d506-4f5c-ae37-aa7fdbbb5540" Name="ToSic.Eav.DataSources.QueryInfo" Description="Query-Info configuration" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="4638668f-d506-4f5c-ae37-aa7fdbbb5540" Name="ToSic.Eav.DataSources.QueryInfo" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="32170df5-e83b-47e6-8bbc-585bd1dd9f7d" Json="True" KeyNumber="11334">
@@ -4217,7 +4306,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.RelationshipFilter" Name="ToSic.Eav.DataSources.RelationshipFilter" Description="used to configure a RelationshipFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.RelationshipFilter" Name="ToSic.Eav.DataSources.RelationshipFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0d03c0c9-f8ef-457d-9399-4bbb00b6e376" Json="True" KeyNumber="10838">
@@ -4415,7 +4504,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="38e7822b-1049-4539-bb3f-f99949b1b1d1" Name="ToSic.Eav.DataSources.Shuffle" Description="Config type for Shuffle" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="38e7822b-1049-4539-bb3f-f99949b1b1d1" Name="ToSic.Eav.DataSources.Shuffle" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Take" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f93f5287-9a90-49fb-b13a-cbd3acad2fea" Json="True" KeyNumber="10356">
@@ -4426,7 +4515,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="ToSic.Eav.DataSources.SqlDataSource" Description="Config type for the Sql DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="c76901b5-0345-4866-9fa3-6208de7f8543" Name="ToSic.Eav.DataSources.SqlDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="956328b0-7686-4f9d-b84e-4cfce2a21558" Json="True" KeyNumber="10294">
@@ -4514,14 +4603,11 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="ConnectionStringName" Type="String" IsTitle="false">
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c5e4826f-c5d2-4ac9-86df-cb165ebd7478" Json="True" KeyNumber="10296">
-            <Value Key="RowCount" Value="1" Type="Number" />
-          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8d5dcc6-5a4e-41d7-84f4-491a71ab3914" Json="True" KeyNumber="10296">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="" Type="String">
+            <Value Key="DefaultValue" Value="(default)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Disabled" Value="False" Type="Boolean">
@@ -4537,7 +4623,7 @@
             <Value Key="Name" Value="Connection Name (preferred)" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="&lt;p&gt;Use connection names from the web.config - DNN default is &lt;em&gt;SiteSqlServer&lt;/em&gt;&lt;/p&gt;" Type="String">
+            <Value Key="Notes" Value="&lt;p&gt;Use connection names from web.config / appsettings.json. To enter another Manual &lt;strong&gt;Connection Name&lt;/strong&gt; use the TT button to the right.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -4553,6 +4639,9 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="c5e4826f-c5d2-4ac9-86df-cb165ebd7478" Json="True" KeyNumber="10296">
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="15a37632-244f-4c6d-89fa-4b4e3c9b7a04" Json="True" KeyNumber="10296">
             <Value Key="DropdownValues" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -4562,7 +4651,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="a6e8e9cb-b14e-4c62-a24d-fdce6c1d4e0c" Json="True" KeyNumber="10296">
-            <Value Key="DropdownValues" Value=":Choose or add a Connection String in the field below&#xA;(default):Default Database (Dnn/Oqtane)&#xA;SiteSqlServer:SiteSqlServer (DNN)&#xA;DefaultConnection:DefaultConnection (Oqtane)&#xA;:Other - use the Text button to the right" Type="String">
+            <Value Key="DropdownValues" Value="(default):Default Database (Dnn/Oqtane)&#xA;SiteSqlServer:SiteSqlServer (DNN)&#xA;DefaultConnection:DefaultConnection (Oqtane)&#xA;:Manual Connection String" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
@@ -4709,7 +4798,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueFilter" Name="ToSic.Eav.DataSources.ValueFilter" Description="used to configure a ValueFilter DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueFilter" Name="ToSic.Eav.DataSources.ValueFilter" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Attribute" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7436af3b-2aef-40aa-9534-58c1cf9bfbeb" Json="True" KeyNumber="10832">
@@ -4849,7 +4938,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueSort" Name="ToSic.Eav.DataSources.ValueSort" Description="used to configure a ValueSort DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.Eav.DataSources.ValueSort" Name="ToSic.Eav.DataSources.ValueSort" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Attributes" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="18af5723-92ab-409b-95f7-4cfe2095d271" Json="True" KeyNumber="12526">
@@ -4917,7 +5006,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.SexyContent.DataSources.DnnSqlDataSource" Name="ToSic.SexyContent.DataSources.DnnSqlDataSource" Description="used to configure a DNN SqlDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.SexyContent.DataSources.DnnSqlDataSource" Name="ToSic.SexyContent.DataSources.DnnSqlDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="ContentType" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5bfdf93e-8fa4-40e2-bb76-3e13af2ad26c" Json="True" KeyNumber="12528">
@@ -5030,7 +5119,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="|Config ToSic.SexyContent.DataSources.DnnUserProfileDataSource" Name="ToSic.SexyContent.DataSources.DnnUserProfileDataSource" Description="Configuration for DNN UserProfile DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="|Config ToSic.SexyContent.DataSources.DnnUserProfileDataSource" Name="ToSic.SexyContent.DataSources.DnnUserProfileDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="TitleFieldName" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fa7be2bc-62c7-4677-9b78-f60be4e2a941" Json="True" KeyNumber="12530">
@@ -5223,7 +5312,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02" Name="ToSic.SexyContent.DataSources.ModuleDataSource" Description="For DNN Module DataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02" Name="ToSic.SexyContent.DataSources.ModuleDataSource" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="97948f14-12db-4d93-8c97-91746eeea501" Json="True" KeyNumber="10990">
@@ -5349,7 +5438,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="ac11fae7-1916-4d2d-8583-09872e1e6966" Name="UsersDataSourceConfig" Description="" Scope="System.DataSources" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="ac11fae7-1916-4d2d-8583-09872e1e6966" Name="UsersDataSourceConfig" Scope="System.DataSources" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="UserIds" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c8bcc1a1-d859-4760-8d6c-f566e9ae37e5" Json="True" KeyNumber="30437">
@@ -6725,6 +6814,121 @@
       <Value Key="Title" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="d7f2e4fa-5306-41bb-a3cd-d9529c838879" AttributeSetName="🧑‍💻SystemExportConfiguration" EntityGUID="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Json="True">
+      <Value Key="EntitiesWithMetadata" Value="True" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="ExportFormat" Value="json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="FileName" Value="system-datasources.json" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Export Bundle: DataSource Configurations" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="PreserveMarkers" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="50369d5f-079a-48cf-9f79-e9bc1b4d1c3a" Json="True" KeyString="5c84cd3f-f853-40b3-81cf-dee6a07dc411">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="b8199646-4c12-4dd5-bff2-82f97e389e4a" Json="True" KeyString="|Config ToSic.Eav.DataSources.App">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="c15ac282-bc2a-41a1-8009-770c88f4bec4" Json="True" KeyString="c5918cb8-d35a-48c7-9380-a437edde66d2">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="df21e664-4779-4097-89ed-22d89f6d7f80" Json="True" KeyString="|Config ToSic.Eav.DataSources.AttributeFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0a9f256d-12fe-4b84-9147-102066124529" Json="True" KeyString="|Config ToSic.Eav.DataSources.Caches.CacheAllStreams">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="61098150-5830-4ec9-bb9e-92f71248bf67" Json="True" KeyString="832cd470-49f2-4909-a08a-77644457713e">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="813d7ca7-bd9e-4473-a8f4-5582d0cb7f93" Json="True" KeyString="7c2b2bc2-68c6-4bc3-ba18-6e6b5176ba02">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="0a67e7f7-9303-43dc-91b7-ac38965b0bd2" Json="True" KeyString="|Config ToSic.Eav.DataSources.CsvDataSource">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="b0f8da72-bd54-48f5-8c26-9289fe954d88" Json="True" KeyString="|Config ToSic.Eav.DataSources.EntityIdFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="da8f72f2-059b-4379-b13f-05b8e5d37331" Json="True" KeyString="|Config ToSic.Eav.DataSources.EntityTypeFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="d9e4b16e-de5c-4afb-a3f7-ae38d4dbc452" Json="True" KeyString="7b4fce73-9c29-4517-af14-0a704da5b958">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="eb65bd28-490f-4ca6-ab45-7dcce6d7ef94" Json="True" KeyString="d7858b36-1ef1-4c3d-b15c-c567b0d7bdd4">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="25c06c67-93c7-4582-ac08-4cc6d6115f34" Json="True" KeyString="7dcd26eb-a70c-4a4f-bb3b-5bd5da304232">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="4cfee379-fbf5-4a20-8877-bf4bcf822981" Json="True" KeyString="|Config ToSic.Eav.DataSources.OwnerFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="1dfc305b-942a-4912-9655-d6f7a057080b" Json="True" KeyString="|Config ToSic.Eav.DataSources.Paging">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="eb6c66e1-93e2-496d-b40c-b108fbe55bb2" Json="True" KeyString="a72cb2f4-52bb-41e6-9281-10e69aeb0310">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="6c60e84d-0024-44e3-afdf-9b0c4e068262" Json="True" KeyString="78d25ea6-66cc-44a2-b45d-77749cd9420a">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="afb4f57b-a5e5-41b3-8ae7-02308c99bf67" Json="True" KeyString="|Config ToSic.Eav.DataSources.RelationshipFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="cdb1b30e-6486-445e-812a-d1e1e288e732" Json="True" KeyString="1b9fd9d1-dde0-40ad-bb66-5cd7f30de18d">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="5ca04d8f-5cc8-40f5-ae31-f7f0f926e0cd" Json="True" KeyString="38e7822b-1049-4539-bb3f-f99949b1b1d1">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="9e1bdc69-dbc0-436e-94ab-bfffa3c64615" Json="True" KeyString="c76901b5-0345-4866-9fa3-6208de7f8543">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="486f9784-a4e6-4301-bd4a-033ae8f71892" Json="True" KeyString="67b19864-df6d-400b-9f37-f41f1dd69c4a">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="42500e46-6b17-431d-acaf-1b470dcbf943" Json="True" KeyString="fabc849e-b426-42ea-8e1c-c04e69facd9b">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="d557bf39-7a46-43a4-a7a5-9bbd0e09bd36" Json="True" KeyString="5461d34d-7dc6-4d38-9250-a0729cc8ead3">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="e9a11ca1-f1f7-433a-8431-865daf791dd6" Json="True" KeyString="37b25044-29bb-4c78-85e4-7b89f0abaa2c">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="8ad53d42-0b13-4ba2-8fab-8d18e597cd01" Json="True" KeyString="4638668f-d506-4f5c-ae37-aa7fdbbb5540">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="47f34735-1cc3-4f1f-aa93-ff5d28bca485" Json="True" KeyString="d167054a-fe0f-4e98-b1f1-0a9990873e86">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="b45120ae-fb61-4d0d-b713-548573b5e5fd" Json="True" KeyString="ac11fae7-1916-4d2d-8583-09872e1e6966">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="98a943b9-8199-42c7-997a-9b0b07411d14" Json="True" KeyString="|Config ToSic.Eav.DataSources.ValueFilter">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="e2f569c9-d1dd-4458-a54e-4aaf53e9ae3c" AttributeSetName="LanguagesDecorator" EntityGUID="8da53d14-f2e4-446c-aae6-1692eb0b959d" Json="True" KeyString="ac11fae7-1916-4d2d-8583-09872e1e6966">
+      <Value Key="Enabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Disable translation" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="08c25914-dc7e-4621-b9b9-ce26240ab02c" Json="True" KeyString="|Config ToSic.Eav.DataSources.ValueSort">
+      <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
     </Entity>
   </Entities>
   <PortalFiles />
