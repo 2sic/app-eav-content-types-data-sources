@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.99.00" ExportDate="2024-07-11T12:39:58.6276487+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.02" ExportDate="2024-09-18T16:06:17.9518164+02:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -1299,7 +1299,6 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="IncludeMetadata" Type="String" IsTitle="false">
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ad69c663-5ca5-40dc-859a-fc6f39fe47b9" Json="True" KeyNumber="24610" />
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8d176fb0-f52a-489e-b1c3-d7b8b5971cbd" Json="True" KeyNumber="24610">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -1352,6 +1351,7 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
           </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ad69c663-5ca5-40dc-859a-fc6f39fe47b9" Json="True" KeyNumber="24610" />
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="ba7eea6f-e077-4791-89c6-a27af84f8d11" Json="True" KeyNumber="24610">
             <Value Key="DropdownValues" Value=":System Default (don't include)&#xA;false:Don't include&#xA;true:Include" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
@@ -8129,13 +8129,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.ConnectionString === '';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.ConnectionString === ''; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8143,13 +8146,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.ConnectionStringName === '';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.ConnectionStringName === ''; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8304,13 +8310,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.IncludeRelationshipsAsCsv == 'true';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.IncludeRelationshipsAsCsv == 'true'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+      <Value Key="Title" Value="Setting Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8318,13 +8327,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.IncludeRelationshipsAsCsv == 'true'&#xA;    ? 'CSV like &quot;27,42,999&quot;'&#xA;    : 'object like { id: 27, guid: &quot;guid-guid-guidguid&quot; }';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) {&#xA;  return data.IncludeRelationshipsAsCsv == 'true'&#xA;    ? 'CSV like &quot;27,42,999&quot;'&#xA;    : 'object like { id: 27, guid: &quot;guid-guid-guidguid&quot; }';&#xA;}" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Notes" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Notes" Type="String">
+      <Value Key="Title" Value="Setting Notes" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8332,13 +8344,16 @@
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="function v1 (data, context) {&#xA;  return data.IncludeRelationshipsAsCsv == 'true';&#xA;}" Type="String">
+      <Value Key="Formula" Value="v1(data, context) { return data.IncludeRelationshipsAsCsv == 'true'; }" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Target" Value="Field.Settings.Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Disabled" Type="String">
+      <Value Key="Title" Value="Setting Disabled" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8375,20 +8390,19 @@
       <Value Key="Configuration" Value="0960a350-3b85-48b9-b960-2ae4b4fc4f04" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="772dfff1-b236-4aa9-8359-5f53c08ff7bf" AttributeSetName="UiFormula" EntityGUID="622e3024-b35e-4b9e-aaa5-ea6265148b0b" Json="True">
-      <Value Key="Enabled" Value="True" Type="Boolean" />
       <Value Key="Enabled" Value="True" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String" />
-      <Value Key="Formula" Value="// new formula syntax - see https://r.2sxc.org/formulas&#xA;v2((data, context) =&gt; {&#xA;  return context.debug;&#xA;});" Type="String">
+      <Value Key="Formula" Value="v2((data, context) =&gt; { return context.debug; });" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Target" Value="Field.Settings.Visible" Type="String" />
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
       <Value Key="Target" Value="Field.Settings.Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String" />
-      <Value Key="Title" Value="Field.Settings.Visible" Type="String">
+      <Value Key="Title" Value="Setting Visible" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
