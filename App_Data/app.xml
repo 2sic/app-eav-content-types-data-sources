@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.01.01" ExportDate="2024-10-01T19:15:37.2324344+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="19.03.01" ExportDate="2025-02-15T09:12:03.4598153+01:00">
   <Header>
     <App Guid="5853fb91-80e7-4bac-9430-d2820f233886" />
     <Language Default="en-us" />
@@ -125,12 +125,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -144,9 +138,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -187,12 +178,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -206,9 +191,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -252,12 +234,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -271,9 +247,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -317,12 +290,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-picker" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -336,9 +303,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1216,6 +1180,272 @@
             </Value>
           </Entity>
         </Attribute>
+        <Attribute StaticName="GroupTypeProperties" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="932b2a02-089f-44d3-af98-f74c931072ca" Json="True" KeyNumber="35480">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="empty-default" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Content Type Properties" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;Include information about the Content Type&lt;/p&gt;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@empty-default" AttributeSetName="@empty-default" EntityGUID="a9ece415-15da-4b3c-9232-585b83f7d42d" Json="True" KeyNumber="35480">
+            <Value Key="DefaultCollapsed" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeTypeAs" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0d013f78-1bfc-4711-806e-42ed15a077bf" Json="True" KeyNumber="35481">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Include Type Information" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="4fe64341-20e4-47ad-a86d-b7fa81f5178b" Json="True" KeyNumber="35481">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="3ae13b22-4cf8-422e-8599-a3ae81a9eed4" Json="True" KeyNumber="35481">
+            <Value Key="DropdownValues" Value=":System Default (don't include)&#xA;false:Explicitly Don't include&#xA;object:Include as an object structure&#xA;flat:Include as flat properties" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeTypeId" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="3fb4baa9-380d-4bd1-b312-ed98d4496ebd" Json="True" KeyNumber="35484">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Include Type Id" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3a0f8c69-bd35-4e74-8f91-769e7c979edf" Json="True" KeyNumber="35484">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="674c6242-a59c-4b33-8409-06de312d0540" Json="True" KeyNumber="35484">
+            <Value Key="DropdownValues" Value=":System Default (don't include)&#xA;false:Don't include&#xA;true:Include" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="IncludeTypeName" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ee1d684b-b592-4cab-a121-d3dd4ef1c840" Json="True" KeyNumber="35485">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Include Type Name" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="bba116c0-4304-46e5-9d83-239ce111d329" Json="True" KeyNumber="35485">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="276f3efa-7bc4-40ee-9e35-8dc3d601a81c" Json="True" KeyNumber="35485">
+            <Value Key="DropdownValues" Value=":System Default (don't include)&#xA;false:Don't include&#xA;true:Include" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="TypePropertyNames" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cdde0c93-93f1-4ade-9b95-2dcf02aebf49" Json="True" KeyNumber="35482">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="Type" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Type Property Name(s)" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="e389c19c-3780-4d98-85e2-eb0e47d0d17b" Json="True" KeyNumber="35482">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="b8a2be59-a245-4d6c-8ac8-9e43160a4004" Json="True" KeyNumber="35482">
+            <Value Key="DropdownValues" Value=":Default (Type)&#xA;Type&#xA;ContentType&#xA;" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="182" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
         <Attribute StaticName="GroupRelationshipProperties" Type="Empty" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="04139ddc-10a5-4ace-9bd7-ce055dadd534" Json="True" KeyNumber="24596">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -1248,12 +1478,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1267,9 +1491,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1314,12 +1535,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="34febfa2-fb09-43d7-880d-9103e4d6f52a" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1333,9 +1548,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1379,12 +1591,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1398,9 +1604,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1444,12 +1647,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1463,9 +1660,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1510,12 +1704,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="7813fc65-c96c-4a2e-a101-2018d3041d6f" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1529,9 +1717,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1593,12 +1778,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1612,9 +1791,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1774,12 +1950,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="6ee62e9e-2671-4e97-83a7-89731c1705e8" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1793,9 +1963,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1881,12 +2048,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1900,9 +2061,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -1947,12 +2105,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="9f210b50-38c1-4dae-8a57-b792c8246899" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -1966,9 +2118,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2013,12 +2162,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="13578018-6550-406b-a9c8-4e1410891a33" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2032,9 +2175,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2120,12 +2260,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2139,9 +2273,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2185,12 +2316,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2204,9 +2329,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2250,12 +2372,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2269,9 +2385,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2315,12 +2428,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2334,9 +2441,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2712,12 +2816,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown-query" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2731,9 +2829,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -2755,9 +2850,6 @@
             <Value Key="AllowMultiValue" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="EnableCreate" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="EnableEdit" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -2765,9 +2857,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="EnableTextEntry" Value="True" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="EntityType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Label" Value="Name" Type="String">
@@ -4411,9 +4500,6 @@
             <Value Key="AllowMultiValue" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="EnableCreate" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="EnableEdit" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -4421,9 +4507,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="EnableTextEntry" Value="True" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="EntityType" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Label" Value="Title" Type="String">
@@ -4662,12 +4745,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="622e3024-b35e-4b9e-aaa5-ea6265148b0b" Type="Entity" />
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="empty-default" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -4681,9 +4758,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -4713,12 +4787,6 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
-            <Value Key="HelpLink" Value="" Type="Hyperlink">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Information" Value="" Type="String">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
             <Value Key="InputType" Value="string-dropdown" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
@@ -4732,9 +4800,6 @@
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="182" ReadOnly="false" />
-            </Value>
-            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="182" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -7479,7 +7544,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="18.02.00" Type="String">
+      <Value Key="Version" Value="19.03.01" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
     </Entity>
@@ -8399,13 +8464,16 @@
       </Value>
     </Entity>
     <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="910bb098-0184-4134-8ea4-f121a30acafe" Json="True" KeyString="ac11fae7-1916-4d2d-8583-09872e1e6966">
+      <Value Key="AdditionalSettings" Value="" Type="String">
+        <Dimension DimensionID="182" ReadOnly="false" />
+      </Value>
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;Configure which users to show.&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure which users to show.&lt;/p&gt;&#xA;&lt;p&gt;It will return &lt;a href=&quot;http://go.2sxc.org/find?xref=ToSic.Sxc.Cms.Users&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;users and roles&lt;/a&gt;&amp;nbsp;entities.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
@@ -8583,7 +8651,7 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;Configure settings for the Pages DataSource.&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Configure settings for the Pages DataSource.&lt;/p&gt;&#xA;&lt;p&gt;It will return &lt;a href=&quot;http://go.2sxc.org/find?xref=ToSic.Sxc.Cms.Pages&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pages&lt;/a&gt;&amp;nbsp;entities.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
@@ -8721,9 +8789,6 @@
       <Value Key="ItemTooltip" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="PickerPreviewType" Value="" Type="String">
-        <Dimension DimensionID="182" ReadOnly="false" />
-      </Value>
       <Value Key="PreviewValue" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
@@ -8741,7 +8806,7 @@
       <Value Key="DynamicChildrenField" Value="" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
-      <Value Key="EditInstructions" Value="&lt;p&gt;Specify how to get lists of files and/or folders from the App.&lt;/p&gt;" Type="String">
+      <Value Key="EditInstructions" Value="&lt;p&gt;Specify how to get lists of files and/or folders from the App.&lt;/p&gt;&#xA;&lt;p&gt;It will return &lt;a href=&quot;http://go.2sxc.org/find?xref=ToSic.Sxc.Cms.Assets&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;file and folder asset&lt;/a&gt; entities.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="182" ReadOnly="false" />
       </Value>
       <Value Key="Icon" Value="" Type="Hyperlink">
